@@ -22,10 +22,10 @@ export default function About() {
                   YOUR GROWTH, OUR<br />EXPERTISE
                 </h1>
                 <p className="text-lg font-semibold mb-4">INTEGRITY · INSIGHT · IMPACT</p>
-                <p className="text-blue-100 mb-8 leading-relaxed">
+                <p className="text-brand-lighter mb-8 leading-relaxed">
                   At Think North Services LLP., we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
-                <button className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-50 transition-colors">
+                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
                 <div className="mt-6 flex items-center gap-4">
@@ -87,7 +87,7 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-blue-600 mr-3">➜</span>
+                  <span className="text-brand mr-3">➜</span>
                   VISION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -97,7 +97,7 @@ export default function About() {
 
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-blue-600 mr-3">➜</span>
+                  <span className="text-brand mr-3">➜</span>
                   MISSION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -197,7 +197,7 @@ export default function About() {
             </div>
 
             <div className="text-center mt-8">
-              <button className="bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors">
+              <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
                 VISIT OUR OFFICE ➔
               </button>
             </div>
@@ -243,7 +243,7 @@ export default function About() {
                 </div>
                 <Link
                   href="/services"
-                  className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                  className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
                 >
                   EXPLORE OUR OFFERINGS ➔
                 </Link>
@@ -259,7 +259,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
               <p className="text-gray-600">
                 We are proud to have partnered with diverse<br />
-                businesses that have chosen K.P. Bhagat & Co.<br />
+                businesses that rely on ThinkNorth Services LLP<br />
                 as their trusted financial partner.
               </p>
             </div>
@@ -288,7 +288,7 @@ export default function About() {
             <div className="text-center">
               <Link
                 href="/collaborations"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>
@@ -317,7 +317,7 @@ export default function About() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      K P Bhagat & Co has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management.
+                      ThinkNorth Services LLP has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management.
                     </p>
                     <div className="font-bold">Mr. James John</div>
                     <div className="text-sm text-gray-600">CEO, Short Amusement Ltd</div>
@@ -334,7 +334,7 @@ export default function About() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      K P Bhagat & Co has been our go-to partner for CA services specializing in accounting, tax filing and compliance.
+                      ThinkNorth Services LLP has been our go-to partner for CA services specializing in accounting, tax filing and compliance.
                     </p>
                     <div className="font-bold">CA Adesh Mehta</div>
                     <div className="text-sm text-gray-600">Group CFO, K. Ghelawala Group</div>
@@ -358,13 +358,13 @@ export default function About() {
               backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
             }}
           >
-            <div className="absolute inset-0 bg-blue-900/80"></div>
+            <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-blue-900 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition-colors"
+              className="inline-block bg-white text-brand-dark px-8 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
             >
               START TODAY ➔
             </Link>

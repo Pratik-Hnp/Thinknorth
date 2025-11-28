@@ -21,10 +21,10 @@ export default function Home() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   EMPOWERING<br />FINANCIAL SUCCESS FOR<br />OVER 15 YEARS
                 </h1>
-                <p className="text-blue-100 mb-8 leading-relaxed">
+                <p className="text-brand-lighter mb-8 leading-relaxed">
                   Think North Services LLP. has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
                 </p>
-                <button className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-50 transition-colors">
+                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
                 <div className="mt-6 flex items-center gap-4">
@@ -82,7 +82,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm mb-4">
                     We provide end-to-end financial operations support that helps you stay focused on your business...
                   </p>
-                  <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
                   </Link>
                 </div>
@@ -99,7 +99,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm mb-4">
                     Our strategic advisory services help you navigate complex business challenges...
                   </p>
-                  <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
                   </Link>
                 </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm mb-4">
                     We help you ensure robust governance and optimize your business operations...
                   </p>
-                  <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
                   </Link>
                 </div>
@@ -133,7 +133,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm mb-4">
                     Our audit and compliance services ensure your business meets regulatory standards...
                   </p>
-                  <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
                   </Link>
                 </div>
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
               <Link
                 href="/services"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE YOUR OPTIONS ➔
               </Link>
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-blue-600 mr-2">➜</span>
+                      <span className="text-brand mr-2">➜</span>
                       VISION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -175,7 +175,7 @@ export default function Home() {
                   
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-blue-600 mr-2">➜</span>
+                      <span className="text-brand mr-2">➜</span>
                       MISSION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -184,7 +184,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button className="mt-8 bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition-colors">
+                <button className="mt-8 bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors">
                   KNOW MORE ➔
                 </button>
               </div>
@@ -195,7 +195,7 @@ export default function Home() {
                   alt="Business presentation"
                   className="rounded-lg shadow-lg"
                 />
-                <div className="absolute bottom-6 right-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl">
+                <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
                   <div className="text-4xl font-bold mb-2">20+</div>
                   <div className="text-sm">Happy Accountants</div>
                   <div className="mt-4 text-4xl font-bold mb-2">15</div>
@@ -283,11 +283,11 @@ export default function Home() {
 
             <div className="text-center">
               <p className="text-sm text-gray-600 mb-6">
-                Here are just a few of the businesses that have chosen K.P. Bhagat & Co. as their trusted financial partner.
+                Here are just a few of the businesses partnering with ThinkNorth Services LLP for clarity and growth.
               </p>
               <Link
                 href="/collaborations"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>
@@ -316,7 +316,7 @@ export default function Home() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      K P Bhagat & Co has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
+                      ThinkNorth Services LLP has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
                     </p>
                     <div className="mt-4">
                       <div className="font-bold">Mr. James John</div>
@@ -335,7 +335,7 @@ export default function Home() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      K P Bhagat & Co has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional. They are truly our expert in detail with CA Adesh Mehta, Group CFO, K. Ghelawala Group.
+                      ThinkNorth Services LLP has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional.
                     </p>
                     <div className="mt-4">
                       <div className="font-bold">CA Adesh Mehta</div>
@@ -361,13 +361,13 @@ export default function Home() {
               backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
             }}
           >
-            <div className="absolute inset-0 bg-blue-900/80"></div>
+            <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-blue-900 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition-colors"
+              className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
             >
               START TODAY ➔
             </Link>

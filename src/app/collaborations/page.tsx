@@ -95,7 +95,7 @@ export default function Collaborations() {
               OUR ESTEEMED CO-OPERATIONS
             </h1>
             <p className="text-2xl mb-8">Trusted by Industry Leaders</p>
-            <p className="text-xl text-blue-200">Trusted by Businesses That Trust Numbers</p>
+            <p className="text-xl text-brand-light">Trusted by Businesses That Trust Numbers</p>
 
             {/* Client Logos Grid */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -119,10 +119,10 @@ export default function Collaborations() {
               ))}
             </div>
 
-            <p className="mt-12 text-lg text-blue-100">
-              Here are just a few of the businesses that have chosen K.P. Bhagat & Co. as their trusted financial partner.
+            <p className="mt-12 text-lg text-brand-lighter">
+              Here are just a few of the businesses that partner with ThinkNorth Services LLP for clarity and confidence.
             </p>
-            <button className="mt-8 bg-blue-600 text-white px-8 py-3 rounded font-semibold hover:bg-blue-700 transition-colors">
+            <button className="mt-8 bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
               EXPLORE WHAT WE DELIVERED ➔
             </button>
           </div>
@@ -147,7 +147,7 @@ export default function Collaborations() {
                 </div>
                 <div className={idx % 2 === 1 ? "md:order-1" : ""}>
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">{client.name} ➜</h3>
-                  <p className="text-blue-600 font-semibold mb-4">Client Type: {client.type}</p>
+                  <p className="text-brand font-semibold mb-4">Client Type: {client.type}</p>
                   <p className="text-gray-600 leading-relaxed">{client.description}</p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Collaborations() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
               <p className="text-gray-700">
                 We are proud to have partnered with diverse<br />
-                businesses that have chosen K.P. Bhagat & Co.<br />
+                businesses that rely on ThinkNorth Services LLP<br />
                 as their trusted financial partner.
               </p>
             </div>
@@ -191,7 +191,7 @@ export default function Collaborations() {
             <div className="text-center">
               <Link
                 href="/contact"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>

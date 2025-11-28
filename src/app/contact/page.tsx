@@ -7,6 +7,38 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 
+const contactChannels = [
+  {
+    icon: "📞",
+    label: "Phone",
+    value: "+91 80000 98089",
+    href: "tel:+918000098089"
+  },
+  {
+    icon: "✉️",
+    label: "Email",
+    value: "vardhan@thinknorth.co.in",
+    href: "mailto:vardhan@thinknorth.co.in"
+  },
+  {
+    icon: "🌐",
+    label: "Website",
+    value: "www.thinknorth.co.in",
+    href: "https://www.thinknorth.co.in"
+  }
+];
+
+const officeLocations = [
+  {
+    title: "Surat HQ",
+    lines: ["806, Rajhans Montessa, Airport Road,", "Surat - 395007"]
+  },
+  {
+    title: "Mumbai Office",
+    lines: ["503, Neelkanth Corporate Park,", "Vidya Vihar West, Mumbai - 400086"]
+  }
+];
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -31,30 +63,28 @@ export default function Contact() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  BUILD SMARTER. GROW SMARTER. START HERE
+                  Your Direction to Smarter Financial Choices
                 </h1>
-                <p className="text-blue-100 mb-8 leading-relaxed">
-                  K.P. Bhagat & Co. offers expert services of financial operations, consulting, outsourced management accounting, strategic advisory, Governance & optimization and compliances services to businesses & start-ups.
+                <p className="text-brand-lighter mb-8 leading-relaxed">
+                  ThinkNorth Services LLP blends strategic finance, compliance, and technology to guide ambitious teams with clarity. Let’s design clearer paths for growth from Surat to Mumbai and beyond.
                 </p>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">📞</span>
-                    <div>
-                      <div className="font-semibold">Phone:</div>
-                      <a href="tel:+916352417181" className="text-blue-100 hover:text-white">
-                        +91 635 241 7181
-                      </a>
+                  {contactChannels.map((channel) => (
+                    <div key={channel.label} className="flex items-start gap-3">
+                      <span className="text-2xl">{channel.icon}</span>
+                      <div>
+                        <div className="font-semibold">{channel.label}:</div>
+                        <a
+                          href={channel.href}
+                          className="text-brand-lighter hover:text-white transition-colors"
+                          target={channel.href.startsWith("http") ? "_blank" : undefined}
+                          rel={channel.href.startsWith("http") ? "noreferrer" : undefined}
+                        >
+                          {channel.value}
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">✉️</span>
-                    <div>
-                      <div className="font-semibold">Email:</div>
-                      <a href="mailto:info@cakpbhagat.com" className="text-blue-100 hover:text-white">
-                        info@cakpbhagat.com
-                      </a>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               <div className="relative">
@@ -83,25 +113,22 @@ export default function Contact() {
                 </p>
 
                 <div className="space-y-6 mt-8">
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2 flex items-center">
-                      <span className="text-blue-600 mr-2">📞</span>
-                      Phone
-                    </h3>
-                    <a href="tel:+916352417181" className="text-blue-600 hover:text-blue-800">
-                      +91 635 241 7181
-                    </a>
-                  </div>
-
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-2 flex items-center">
-                      <span className="text-blue-600 mr-2">✉️</span>
-                      Email
-                    </h3>
-                    <a href="mailto:info@cakpbhagat.com" className="text-blue-600 hover:text-blue-800">
-                      info@cakpbhagat.com
-                    </a>
-                  </div>
+                  {contactChannels.map((channel) => (
+                    <div key={channel.label}>
+                      <h3 className="font-bold text-gray-900 mb-2 flex items-center">
+                        <span className="text-brand mr-2">{channel.icon}</span>
+                        {channel.label}
+                      </h3>
+                      <a
+                        href={channel.href}
+                        className="text-brand hover:text-brand-dark transition-colors"
+                        target={channel.href.startsWith("http") ? "_blank" : undefined}
+                        rel={channel.href.startsWith("http") ? "noreferrer" : undefined}
+                      >
+                        {channel.value}
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -117,7 +144,7 @@ export default function Contact() {
                       id="name"
                       required
                       placeholder="Your name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand focus:border-transparent"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
@@ -132,7 +159,7 @@ export default function Contact() {
                       id="lastName"
                       required
                       placeholder="Your last name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand focus:border-transparent"
                       value={formData.lastName}
                       onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     />
@@ -147,7 +174,7 @@ export default function Contact() {
                       id="email"
                       required
                       placeholder="Your email address"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand focus:border-transparent"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
@@ -162,7 +189,7 @@ export default function Contact() {
                       required
                       rows={6}
                       placeholder="Enter your message"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand focus:border-transparent resize-none"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     />
@@ -170,7 +197,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                    className="w-full bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors"
                   >
                     SUBMIT ➔
                   </button>
@@ -186,32 +213,39 @@ export default function Contact() {
             <Card className="p-8">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Visit us at the heart of<br />the Financial Expertise.
+                  Visit our strategy hubs in Surat &amp; Mumbai
                 </h2>
-                <button className="bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors">
-                  VISIT US HERE ➔
+                <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                  PLAN A VISIT ➔
                 </button>
               </div>
 
               {/* Embedded Map */}
               <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0563076384196!2d72.51557831496658!3d23.02471892158858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b4d2d2d2d2d%3A0x2d2d2d2d2d2d2d2d!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps?q=Rajhans%20Montessa%20Surat&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Office Location"
+                  title="Surat Office Location"
                 />
               </div>
 
-              <div className="mt-6 text-center text-gray-600">
-                <p className="font-semibold text-gray-900 mb-2">Address</p>
-                <p>306, Luxuria Business Hub, Nr. Audi Showroom,</p>
-                <p>Keshavbaug, Vastrapur, Ahmedabad-380015,</p>
-                <p>Gujarat, INDIA</p>
+              <div className="mt-10 grid md:grid-cols-2 gap-6">
+                {officeLocations.map((office) => (
+                  <div key={office.title} className="rounded-lg border border-brand-light p-6 text-left">
+                    <p className="text-sm uppercase tracking-[0.2em] text-brand mb-2">Office</p>
+                    <p className="font-semibold text-gray-900 mb-2">{office.title}</p>
+                    {office.lines.map((line) => (
+                      <p key={line} className="text-gray-600">
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
             </Card>
           </div>
@@ -252,7 +286,7 @@ export default function Contact() {
               </p>
               <Link
                 href="/collaborations"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>

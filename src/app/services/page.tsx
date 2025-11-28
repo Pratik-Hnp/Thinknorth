@@ -24,10 +24,10 @@ export default function Services() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   COMPREHENSIVE CA<br />SERVICES FOR<br />SUSTAINABLE GROWTH
                 </h1>
-                <p className="text-blue-100 mb-8 leading-relaxed">
+                <p className="text-brand-lighter mb-8 leading-relaxed">
                   We offer expert financial and advisory services that drive business efficiency. From Accounting to strategic advisory, tax filing to business setup, we provide end-to-end solutions tailored to your unique needs.
                 </p>
-                <button className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-50 transition-colors">
+                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
                 <div className="mt-6 flex items-center gap-4">
@@ -85,7 +85,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     We provide end-to-end financial operations support...
                   </p>
-                  <button className="bg-blue-900 text-white px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -102,7 +102,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Expert guidance for complex business challenges...
                   </p>
-                  <button className="bg-blue-900 text-white px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -119,7 +119,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Ensure robust governance and optimization...
                   </p>
-                  <button className="bg-blue-900 text-white px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -136,7 +136,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Comprehensive audit and compliance services...
                   </p>
-                  <button className="bg-blue-900 text-white px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -163,7 +163,7 @@ export default function Services() {
                 </p>
                 <div className="space-y-4">
                   <div
-                    className="border-l-4 border-blue-600 pl-4 cursor-pointer"
+                    className="border-l-4 border-brand pl-4 cursor-pointer"
                     onClick={() => setExpandedService(expandedService === 1 ? null : 1)}
                   >
                     <div className="flex justify-between items-center">
@@ -209,7 +209,7 @@ export default function Services() {
                 </p>
                 <div className="space-y-4">
                   <div
-                    className="border-l-4 border-blue-600 pl-4 cursor-pointer"
+                    className="border-l-4 border-brand pl-4 cursor-pointer"
                     onClick={() => setExpandedService(expandedService === 2 ? null : 2)}
                   >
                     <div className="flex justify-between items-center">
@@ -239,7 +239,7 @@ export default function Services() {
                 </p>
                 <div className="space-y-4">
                   <div
-                    className="border-l-4 border-blue-600 pl-4 cursor-pointer"
+                    className="border-l-4 border-brand pl-4 cursor-pointer"
                     onClick={() => setExpandedService(expandedService === 3 ? null : 3)}
                   >
                     <div className="flex justify-between items-center">
@@ -281,7 +281,7 @@ export default function Services() {
                 </p>
                 <div className="space-y-4">
                   <div
-                    className="border-l-4 border-blue-600 pl-4 cursor-pointer"
+                    className="border-l-4 border-brand pl-4 cursor-pointer"
                     onClick={() => setExpandedService(expandedService === 4 ? null : 4)}
                   >
                     <div className="flex justify-between items-center">
@@ -313,7 +313,7 @@ export default function Services() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-blue-600 mr-2">➜</span>
+                      <span className="text-brand mr-2">➜</span>
                       VISION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -323,7 +323,7 @@ export default function Services() {
                   
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-blue-600 mr-2">➜</span>
+                      <span className="text-brand mr-2">➜</span>
                       MISSION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -332,7 +332,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <button className="mt-8 bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition-colors">
+                <button className="mt-8 bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors">
                   KNOW MORE ➔
                 </button>
               </div>
@@ -343,7 +343,7 @@ export default function Services() {
                   alt="Business presentation"
                   className="rounded-lg shadow-lg"
                 />
-                <div className="absolute bottom-6 right-6 bg-blue-900 text-white p-6 rounded-lg shadow-xl">
+                <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
                   <div className="text-4xl font-bold mb-2">20+</div>
                   <div className="text-sm">Happy Accountants</div>
                   <div className="mt-4 text-4xl font-bold mb-2">15</div>
@@ -386,7 +386,7 @@ export default function Services() {
             <div className="text-center">
               <Link
                 href="/collaborations"
-                className="inline-block bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>
@@ -402,13 +402,13 @@ export default function Services() {
               backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
             }}
           >
-            <div className="absolute inset-0 bg-blue-900/80"></div>
+            <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-blue-900 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition-colors"
+              className="inline-block bg-white text-brand-dark px-8 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
             >
               START TODAY ➔
             </Link>

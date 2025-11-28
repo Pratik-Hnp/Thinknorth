@@ -26,19 +26,19 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <Link href="/" className="text-gray-700 hover:text-brand transition-colors font-medium">
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-brand transition-colors font-medium">
               About
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <Link href="/services" className="text-gray-700 hover:text-brand transition-colors font-medium">
               Services
             </Link>
-            <Link href="/collaborations" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <Link href="/collaborations" className="text-gray-700 hover:text-brand transition-colors font-medium">
               Collaborations
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-brand transition-colors font-medium">
               Contact
             </Link>
           </div>
