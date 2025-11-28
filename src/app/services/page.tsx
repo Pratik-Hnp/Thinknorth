@@ -20,7 +20,7 @@ export default function Services() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">K. P. BHAGAT & CO.</div>
+                <div className="text-sm mb-4">Think North Services LLP.</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   COMPREHENSIVE CA<br />SERVICES FOR<br />SUSTAINABLE GROWTH
                 </h1>

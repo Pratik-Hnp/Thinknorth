@@ -59,7 +59,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-300 pt-6 text-center">
           <p className="text-gray-700 text-sm font-medium">
-            K. P. BHAGAT & CO. - ALL RIGHTS RESERVED
+            Think North Services LLP. - ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

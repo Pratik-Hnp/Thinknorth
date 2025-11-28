@@ -17,13 +17,13 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">K. P. BHAGAT & CO.</div>
+                <div className="text-sm mb-4">Think North Services LLP.</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   YOUR GROWTH, OUR<br />EXPERTISE
                 </h1>
                 <p className="text-lg font-semibold mb-4">INTEGRITY · INSIGHT · IMPACT</p>
                 <p className="text-blue-100 mb-8 leading-relaxed">
-                  At K. P. Bhagat & Co., we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
+                  At Think North Services LLP., we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
                 <button className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-50 transition-colors">
                   CONNECT NOW ➔
@@ -74,7 +74,7 @@ export default function About() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">ABOUT US</h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Established in 2009 to provide complete Financial Intelligence, <strong>K. P. Bhagat & Co.</strong> is a Full-service Chartered Accountancy firm offering specialized advisory and accounting services. With a team of highly qualified professionals bringing years, diligence, and dedication, we help clients navigate the more, financial, complex, and financial decisions.
+                  Established in 2009 to provide complete Financial Intelligence, <strong>Think North Services LLP.</strong> is a Full-service Chartered Accountancy firm offering specialized advisory and accounting services. With a team of highly qualified professionals bringing years, diligence, and dedication, we help clients navigate the more, financial, complex, and financial decisions.
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function About() {
 
             <div className="bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
-                At K. P. Bhagat & Co., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
+                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
               </p>
             </div>
           </div>

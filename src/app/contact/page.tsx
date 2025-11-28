@@ -79,7 +79,7 @@ export default function Contact() {
                   Whether you're a startup seeking structure, a business planning for growth, or an individual looking for tax clarity — we're here to help.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Discover firsthand how <strong>K. P. Bhagat & Co.</strong> can support your goals.
+                  Discover firsthand how <strong>Think North Services LLP.</strong> can support your goals.
                 </p>
 
                 <div className="space-y-6 mt-8">

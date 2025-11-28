@@ -17,12 +17,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">K. P. BHAGAT & CO.</div>
+                <div className="text-sm mb-4">Think North Services LLP.</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   EMPOWERING<br />FINANCIAL SUCCESS FOR<br />OVER 15 YEARS
                 </h1>
                 <p className="text-blue-100 mb-8 leading-relaxed">
-                  K. P. Bhagat & Co. has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
+                  Think North Services LLP. has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
                 </p>
                 <button className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-50 transition-colors">
                   CONNECT NOW ➔

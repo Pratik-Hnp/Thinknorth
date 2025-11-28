@@ -1,0 +1,13 @@
+<svg width="185" height="45" viewBox="0 0 185 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .word {
+      font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+      dominant-baseline: hanging;
+    }
+  </style>
+  <text class="word" x="0" y="6" font-size="24" font-weight="300" fill="#d4d4d4">Think</text>
+  <text class="word" x="78" y="6" font-size="24" font-weight="600" fill="#a64ced">North</text>
+  <path d="M148 5 L154 0 L152 8" fill="#a64ced" />
+  <text class="word" x="0" y="32" font-size="10" letter-spacing="0.35em" fill="#b5b5b5">SERVICES LLP</text>
+</svg>
+
