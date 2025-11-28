@@ -21,9 +21,9 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">Think North Services</div>
+                <div className="text-sm mb-4">Your compass to financial needs</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Precision-Driven Financial Strategies for Corporates & HNIs
+                  Navigating Finance with northern precision
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
                   Think North is your partner for next-generation finance, accounting, and strategic advisory solutions. With expertise in global markets, compliance, and digital transformation, trusted by top business leaders, our commitment lies in delivering clarity, compliance, and sustainable growth, helping you navigate financial complexities with confidence and precision.
