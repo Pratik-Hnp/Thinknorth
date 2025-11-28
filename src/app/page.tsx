@@ -1,5 +1,7 @@
 "use client";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
@@ -8,6 +10,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 
 export default function Home() {
+  const teamRef = useRef(null);
+  const teamInView = useInView(teamRef, { once: true, margin: "-100px" });
   return (
     <>
       <Navigation />
@@ -207,50 +211,61 @@ export default function Home() {
         </section>
 
         {/* Meet the Team */}
-        <section className="py-20 bg-gray-50">
+        <motion.section 
+          ref={teamRef}
+          initial={{ opacity: 0, y: 60 }}
+          animate={teamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="py-20 bg-gray-200"
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="grid grid-cols-3 gap-4">
-                <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=400&fit=crop"
-                  alt="Team member"
-                  className="rounded-lg"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=400&fit=crop"
-                  alt="Team member"
-                  className="rounded-lg"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=300&h=400&fit=crop"
-                  alt="Team member"
-                  className="rounded-lg"
-                />
-              </div>
-
+              {/* Text column */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
                 <p className="text-gray-600 mb-6">
                   The minds behind the numbers - Experienced, Enthusiastic, Client-Focused.
                 </p>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <div className="font-bold">CA. KRUNAL BHAGAT</div>
-                    <div className="text-sm text-gray-600">Principal</div>
-                  </div>
-                  <div>
-                    <div className="font-bold">BHAVESH SHAH</div>
-                    <div className="text-sm text-gray-600">Partner</div>
-                  </div>
-                  <div>
-                    <div className="font-bold">CA. SHIVANI MEHTA</div>
-                    <div className="text-sm text-gray-600">Chartered Accountant / Audit & Advisory</div>
-                  </div>
-                </div>
+              </div>
+
+              {/* Cards column - styled like services */}
+              <div className="grid sm:grid-cols-3 gap-6">
+                {[
+                  {
+                    name: "CA. KRUNAL BHAGAT",
+                    role: "Principal",
+                    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
+                  },
+                  {
+                    name: "BHAVESH SHAH",
+                    role: "Partner",
+                    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop"
+                  },
+                  {
+                    name: "CA. SHIVANI MEHTA",
+                    role: "Chartered Accountant / Audit & Advisory",
+                    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=500&fit=crop"
+                  }
+                ].map((member) => (
+                  <Card
+                    key={member.name}
+                    className="overflow-hidden hover:shadow-lg transition-shadow"
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="font-bold text-lg mb-3">{member.name}</h3>
+                      <p className="text-gray-600 text-sm">{member.role}</p>
+                    </div>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Client Logos */}
         <section className="py-20 bg-white">
