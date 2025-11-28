@@ -197,7 +197,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                    className="w-full bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
                   >
                     SUBMIT ➔
                   </button>
@@ -215,7 +215,7 @@ export default function Contact() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   Visit our strategy hubs in Surat &amp; Mumbai
                 </h2>
-                <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                <button className="bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
                   PLAN A VISIT ➔
                 </button>
               </div>

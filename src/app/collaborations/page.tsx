@@ -134,9 +134,8 @@ export default function Collaborations() {
             {clients.map((client, idx) => (
               <div
                 key={idx}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
-                  idx % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`grid md:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={idx % 2 === 1 ? "md:order-2" : ""}>
                   <img
@@ -191,7 +190,7 @@ export default function Collaborations() {
             <div className="text-center">
               <Link
                 href="/contact"
-                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>

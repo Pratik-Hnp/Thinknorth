@@ -150,7 +150,7 @@ export default function Home() {
               </div>
               <Link
                 href="/services"
-                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
               >
                 EXPLORE YOUR OPTIONS ➔
               </Link>
@@ -188,7 +188,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button className="mt-8 bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                <button className="mt-8 bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
                   KNOW MORE ➔
                 </button>
               </div>
@@ -301,7 +301,7 @@ export default function Home() {
               </p>
               <Link
                 href="/collaborations"
-                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>
@@ -380,7 +380,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-6">Thinking of numbers?<br />Think North.</h2>
             <Link
               href="/contact"
-              className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+              className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
             >
               START TODAY ➔
             </Link>

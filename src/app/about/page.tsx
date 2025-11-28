@@ -197,7 +197,7 @@ export default function About() {
             </div>
 
             <div className="text-center mt-8">
-              <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
+              <button className="bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
                 VISIT OUR OFFICE ➔
               </button>
             </div>
@@ -243,9 +243,9 @@ export default function About() {
                 </div>
                 <Link
                   href="/services"
-                  className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                  className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
                 >
-                  EXPLORE OUR OFFERINGS ➔
+                  EXPLORE YOUR OPTIONS ➔
                 </Link>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function About() {
             <div className="text-center">
               <Link
                 href="/collaborations"
-                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
               >
                 EXPLORE WHAT WE DELIVERED ➔
               </Link>

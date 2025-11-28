@@ -85,7 +85,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     We provide end-to-end financial operations support...
                   </p>
-                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
+                  <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -102,7 +102,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Expert guidance for complex business challenges...
                   </p>
-                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
+                  <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -119,7 +119,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Ensure robust governance and optimization...
                   </p>
-                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
+                  <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -136,7 +136,7 @@ export default function Services() {
                   <p className="text-gray-600 text-sm mb-4">
                     Comprehensive audit and compliance services...
                   </p>
-                  <button className="bg-brand-dark text-white px-6 py-2 rounded font-semibold hover:bg-brand transition-colors w-full">
+                  <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
                   </button>
                 </div>
@@ -309,7 +309,7 @@ export default function Services() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">VALUE PROPOSITION</h2>
                 <p className="text-lg font-semibold text-gray-900 mb-6">Your Strategic Partner</p>
-                
+
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
@@ -320,7 +320,7 @@ export default function Services() {
                       To become the most trusted and forward-thinking Chartered Accountancy firm, offering strategic solutions that fuel growth and success for every business we work with.
                     </p>
                   </div>
-                  
+
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
                       <span className="text-brand mr-2">➜</span>
@@ -332,7 +332,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <button className="mt-8 bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                <button className="mt-8 bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
                   KNOW MORE ➔
                 </button>
               </div>
