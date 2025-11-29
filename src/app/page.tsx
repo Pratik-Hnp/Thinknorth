@@ -6,8 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
+import ServicesMarquee from "@/components/ServicesMarquee";
 
 export default function Home() {
   const teamRef = useRef(null);
@@ -31,14 +31,14 @@ export default function Home() {
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
-                <div className="mt-6 flex items-center gap-4">
+                {/* <div className="mt-6 flex items-center gap-4">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <span key={star} className="text-yellow-400">★</span>
                     ))}
                   </div>
                   <span className="text-sm">5/5 rated by businesses</span>
-                </div>
+                </div> */}
               </div>
               <div className="relative">
                 <img
@@ -52,20 +52,11 @@ export default function Home() {
         </section>
 
         {/* Services Strip */}
-        <div className="bg-white border-y border-gray-200 py-4">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-wrap justify-center gap-8 text-sm font-semibold text-gray-700">
-              <div>★ Global Tax Structuring & Compliance Advisory</div>
-              <div>★ Seamless Fundraising & Capital Solutions</div>
-              <div>★ Advanced Internal Audits for Risk-Free Growth</div>
-              <div>★ Institutional-Grade Financial Reporting</div>
-              <div>★ Dedicated NRI & International Investment Support</div>
-            </div>
-          </div>
-        </div>
+        {/* Services Strip */}
+        <ServicesMarquee />
 
         {/* Our Services */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
@@ -211,7 +202,7 @@ export default function Home() {
         </section>
 
         {/* Meet the Team */}
-        <motion.section
+        {/* <motion.section
           ref={teamRef}
           initial={{ opacity: 0, y: 60 }}
           animate={teamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
@@ -258,16 +249,16 @@ export default function Home() {
               </Card>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="bg-gray-100 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
                 At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
               </p>
             </div>
           </div>
-        </motion.section>
+        </motion.section> */}
 
         {/* Client Logos */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR CLIENTS</h2>
@@ -310,7 +301,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">NATIONAL AND INTERNATIONAL RESULTS</h2>
@@ -388,7 +379,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-      <WhatsAppButton />
     </>
   );
 }

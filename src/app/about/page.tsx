@@ -28,14 +28,14 @@ export default function About() {
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
-                <div className="mt-6 flex items-center gap-4">
+                {/* <div className="mt-6 flex items-center gap-4">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <span key={star} className="text-yellow-400">★</span>
                     ))}
                   </div>
                   <span className="text-sm">5/5 rated by businesses</span>
-                </div>
+                </div> */}
               </div>
               <div className="relative">
                 <img

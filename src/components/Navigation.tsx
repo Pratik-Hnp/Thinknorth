@@ -36,7 +36,7 @@ export default function Navigation() {
               Services
             </Link>
             <Link href="/collaborations" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
-              Collaborations
+              Portfolios
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               Contact
@@ -83,7 +83,7 @@ export default function Navigation() {
               className="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Collaborations
+              Portfolios
             </Link>
             <Link
               href="/contact"
