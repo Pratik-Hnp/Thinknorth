@@ -32,7 +32,7 @@ export default function CompassPreloader() {
                             exit={{ scale: 0.8, opacity: 0, transition: { duration: 0.5 } }}
                         />
 
-                        {/* Cardinal Directions */}
+                        {/* Cardinal Directions - Static */}
                         <motion.div
                             className="absolute inset-0 flex items-center justify-center font-bold text-gray-400 text-xs"
                             initial={{ opacity: 0 }}
@@ -57,29 +57,27 @@ export default function CompassPreloader() {
                                 times: [0, 0.2, 0.4, 0.6, 0.8, 1], // Control pacing
                             }}
                         >
-                            {/* The Needle Itself (SVG Line Style) */}
-                            <motion.svg
-                                width="100"
-                                height="100"
-                                viewBox="0 0 100 100"
-                                className="w-full h-full"
+                            <motion.div
+                                className="relative w-full h-full flex items-center justify-center"
                                 exit={{
                                     y: -1000, // Fly North!
                                     transition: { duration: 0.8, ease: "easeIn" },
                                 }}
                             >
-                                {/* South Line (Gray) */}
-                                <line x1="50" y1="50" x2="50" y2="85" stroke="#4b5563" strokeWidth="4" strokeLinecap="round" />
+                                {/* The Split Arrow (Rocket Shape) */}
+                                <svg
+                                    width="80"
+                                    height="80"
+                                    viewBox="0 0 100 100"
+                                    className="transform -translate-y-1" // Slight adjustment to center visually
+                                >
+                                    {/* Left Half - Gray */}
+                                    <path d="M50 10 L20 90 L50 75 Z" fill="#4b5563" />
 
-                                {/* North Line (Purple) */}
-                                <line x1="50" y1="50" x2="50" y2="15" stroke="#931ee2" strokeWidth="4" strokeLinecap="round" />
-
-                                {/* Arrow Head (Purple) */}
-                                <path d="M40 25 L50 15 L60 25" stroke="#931ee2" strokeWidth="4" strokeLinecap="round" fill="none" />
-
-                                {/* Center Pivot */}
-                                <circle cx="50" cy="50" r="3" fill="white" stroke="#d1d5db" strokeWidth="2" />
-                            </motion.svg>
+                                    {/* Right Half - Purple */}
+                                    <path d="M50 10 L80 90 L50 75 Z" fill="#931ee2" />
+                                </svg>
+                            </motion.div>
                         </motion.div>
                     </div>
                 </motion.div>
