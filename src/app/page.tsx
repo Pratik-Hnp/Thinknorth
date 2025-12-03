@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import ServicesMarquee from "@/components/ServicesMarquee";
 import HeroImageSlider from "@/components/HeroImageSlider";
+import ClientLogos from "@/components/ClientLogos";
 
 export default function Home() {
   const teamRef = useRef(null);
@@ -68,7 +69,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Strip */}
         {/* Services Strip */}
         <ServicesMarquee />
 
@@ -275,47 +275,7 @@ export default function Home() {
         </motion.section> */}
 
         {/* Client Logos */}
-        <section className="py-20 bg-gray-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR CLIENTS</h2>
-              <p className="text-gray-600">Trusted by industry leaders, visionary founders, and global decision-makers</p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-12">
-              {[
-                "Fountainhead",
-                "Nouveau",
-                "Maxilk",
-                "Eminent Care",
-                "Venus+",
-                "Terra.do",
-                "HYOU",
-                "Shah",
-                "24/7",
-                "Wealth New Realty",
-                "---",
-                "Lambretta"
-              ].map((client, idx) => (
-                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
-                  <div className="text-center font-bold text-gray-700">{client}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <p className="text-sm text-gray-600 mb-6">
-                Here are just a few of the businesses partnering with ThinkNorth Services for clarity and growth.
-              </p>
-              <Link
-                href="/collaborations"
-                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
-              >
-                EXPLORE WHAT WE DELIVERED ➔
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ClientLogos />
 
         {/* Testimonials */}
         <section className="py-20 bg-white">

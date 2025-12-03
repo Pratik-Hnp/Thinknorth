@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import AnimatedLogo from "./AnimatedLogo";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,16 +14,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="ThinkNorth Services LLP">
-            <Image
-              src="/thinknorth-logo.png"
-              alt="ThinkNorth Services LLP"
-              width={185}
-              height={45}
-              priority
-              className="h-10 w-auto"
-            />
-          </Link>
+          <AnimatedLogo />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

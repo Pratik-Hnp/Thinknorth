@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
+import ClientLogos from "@/components/ClientLogos";
+import ServicesMarquee from "@/components/ServicesMarquee";
 
 export default function Collaborations() {
   const clients = [
@@ -92,41 +95,46 @@ export default function Collaborations() {
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              OUR ESTEEMED CO-OPERATIONS
+              Chosen by Businesses That Value Accuracy and Insight
             </h1>
-            <p className="text-2xl mb-8">Trusted by Industry Leaders</p>
-            <p className="text-xl text-brand-light">Trusted by Businesses That Trust Numbers</p>
 
             {/* Client Logos Grid */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-items-center">
               {[
-                "Fountainhead",
-                "Nouveau",
-                "Maxilk",
-                "Eminent Care",
-                "Venus+",
-                "Terra.do",
-                "HYOU",
-                "Shah",
-                "24/7",
-                "Wealth View",
-                "---",
-                "Lambretta"
-              ].map((client, idx) => (
-                <div key={idx} className="bg-white/10 backdrop-blur-sm p-4 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
-                  <div className="text-white font-bold text-sm">{client}</div>
+                { src: "/logos/Blossom-logo.png", alt: "Blossom" },
+                { src: "/logos/STRAGEMS_logo.webp", alt: "Stragems" },
+                { src: "/logos/datago_technology_limited_logo.jpg", alt: "DataGo" },
+                { src: "/logos/mtc_co_logo.jpg", alt: "MTC" },
+                { src: "/logos/newmarkable_logo-Photoroom.png", alt: "Newmarkable" },
+                { src: "/logos/7425b29e79ecffb5654f526bede7bf12.w400.h400-Photoroom.png", alt: "Client 6" },
+                { src: "/logos/E5AE8FE899B9Logo-E7AB96E78988-835-scaled-Photoroom.png", alt: "Client 7" },
+                { src: "/logos/WhatsApp Image 2025-11-24 at 11.44.06 PM-Photoroom.png", alt: "Client 8" },
+                { src: "/logos/images (2).png", alt: "Client 9" },
+                { src: "/logos/images (3).png", alt: "Client 10" },
+              ].map((logo, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-lg flex items-center justify-center w-full h-24 shadow-sm">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={120}
+                    height={60}
+                    className="object-contain h-16 w-auto"
+                  />
                 </div>
               ))}
             </div>
 
-            <p className="mt-12 text-lg text-brand-lighter">
-              Here are just a few of the businesses that partner with ThinkNorth Services LLP for clarity and confidence.
+            <p className="mt-12 text-lg text-brand-lighter max-w-4xl mx-auto">
+              From established corporations to dynamic new-age ventures, our clients represent diverse sectors and global markets. At ThinkNorth Services, we deliver measurable impact, long-term reliability, and finance solutions that evolve with your business.
             </p>
             <button className="mt-8 bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
-              EXPLORE WHAT WE DELIVERED ➔
+              View Our Portfolio ➔
             </button>
           </div>
         </section>
+
+        {/* Services Strip */}
+        <ServicesMarquee />
 
         {/* Client Details */}
         <section className="py-20 bg-white">
@@ -155,48 +163,10 @@ export default function Collaborations() {
         </section>
 
         {/* CTA Section */}
-        <section className="gradient-purple-blue py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
-              <p className="text-gray-700">
-                We are proud to have partnered with diverse<br />
-                businesses that rely on ThinkNorth Services LLP<br />
-                as their trusted financial partner.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-12">
-              {[
-                "Fountainhead",
-                "Nouveau",
-                "Maxilk",
-                "Eminent Care",
-                "Venus+",
-                "Terra.do",
-                "HYOU",
-                "Shah",
-                "24/7",
-                "Wealth View",
-                "---",
-                "Lambretta"
-              ].map((client, idx) => (
-                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
-                  <div className="text-center font-bold text-gray-700">{client}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Link
-                href="/contact"
-                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
-              >
-                EXPLORE WHAT WE DELIVERED ➔
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ClientLogos
+          title="OUR ESTEEMED CLIENTS"
+          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
+        />
       </main>
       <Footer />
       <WhatsAppButton />

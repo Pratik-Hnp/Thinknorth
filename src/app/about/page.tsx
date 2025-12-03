@@ -6,6 +6,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
+import ClientLogos from "@/components/ClientLogos";
+import ServicesMarquee from "@/components/ServicesMarquee";
 
 export default function About() {
   return (
@@ -49,16 +51,7 @@ export default function About() {
         </section>
 
         {/* Services Strip */}
-        <div className="bg-white border-y border-gray-200 py-4">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-wrap justify-center gap-8 text-sm font-semibold text-gray-700">
-              <div>🎯 EXCELLENCE ENCOMPASSING COMPLIANCE SUPPORT</div>
-              <div>💼 MEET OUR TEAM & EXPERTISE</div>
-              <div>📊 ENGAGING AUDIT & ASSURANCE SERVICES</div>
-              <div>💰 OTHERS</div>
-            </div>
-          </div>
-        </div>
+        <ServicesMarquee />
 
         {/* About Us Section */}
         <section className="py-20 bg-white">
@@ -73,9 +66,17 @@ export default function About() {
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">ABOUT US</h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  Established in 2009 to provide complete Financial Intelligence, <strong>Think North Services LLP.</strong> is a Full-service Chartered Accountancy firm offering specialized advisory and accounting services. With a team of highly qualified professionals bringing years, diligence, and dedication, we help clients navigate the more, financial, complex, and financial decisions.
-                </p>
+                <div className="text-gray-600 leading-relaxed mb-6 space-y-4">
+                  <p>
+                    Think North Services LLP is a forward-thinking financial consultancy firm delivering end-to-end solutions in finance, accounting, taxation, and strategic advisory. With a focus on precision, innovation, and global-quality standards, we help businesses navigate evolving financial landscapes with clarity and confidence.
+                  </p>
+                  <p>
+                    Built on deep industry expertise, modern analytical tools, and a commitment to proactive problem-solving, we partner with startups, SMEs, corporates, and high-net-worth individuals to drive scalable growth. Our approach goes beyond traditional consulting—every engagement is structured to strengthen financial discipline, enhance compliance, and unlock long-term value.
+                  </p>
+                  <p>
+                    From optimizing financial operations to crafting board-ready insights, Think North Services LLP is dedicated to being your trusted strategic finance partner. We ensure that every decision is backed by data, foresight, and a strong understanding of your unique business ecosystem.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -91,7 +92,7 @@ export default function About() {
                   VISION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  To become the most trusted and forward-thinking Chartered Accountancy firm, offering strategic solutions that fuel growth and success for every business we work with.
+                  To be the trusted global partner for corporates, high-net-worth individuals, and professionals, empowering them with innovative financial strategies and precision-driven advisory for sustainable growth and long-term success.
                 </p>
               </Card>
 
@@ -101,7 +102,7 @@ export default function About() {
                   MISSION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We empower clients with financial clarity through expert, comprehensive services in auditing, taxation, and advisory. We support businesses of all sizes on a true partner in your financial journey.
+                  At Think North Services, our mission is to provide expert financial consultancy, strategic insights, and compliance solutions to businesses and individuals worldwide. We aim to simplify complex financial landscapes, ensuring value-driven outcomes through precision, integrity, and a client-focused approach.
                 </p>
               </Card>
             </div>
@@ -109,7 +110,7 @@ export default function About() {
         </section>
 
         {/* Meet the Team */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
@@ -160,17 +161,21 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Office Gallery */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OFFICE SNAPSHOT GALLERY</h2>
-              <p className="text-gray-600">
-                Take a look around our workspace—<br />
-                Where Numbers Meet Precision. Our Thriving Environment.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">INSIDE THINK NORTH SERVICES LLP</h2>
+              <div className="text-gray-600 space-y-4">
+                <p>
+                  Step into a workspace where structure meets strategy and every corner reflects our commitment to excellence. Our office environment is designed to inspire focus, collaboration, and meaningful conversations. The curated wall art, warm aesthetics, and organized layouts showcase the thinking culture that drives our financial advisory expertise.
+                </p>
+                <p>
+                  These snapshots offer a glimpse into our everyday setting—where ideas evolve, insights are crafted, and decisions that shape businesses are made. It’s more than an office; it’s the space where numbers turn into narratives and plans turn into performance.
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-4 gap-4">
@@ -210,8 +215,7 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
               <p className="text-gray-600">
-                We offer comprehensive strategic expertise tailored to help you<br />
-                grow, comply, and lead in your industry.
+                At Think North Services LLP, we deliver comprehensive financial and strategic solutions designed to help you grow, comply, and lead with confidence. Our services are crafted for modern businesses that demand accuracy, agility, and accountability in every financial move.
               </p>
             </div>
 
@@ -253,48 +257,10 @@ export default function About() {
         </section>
 
         {/* Client Logos */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
-              <p className="text-gray-600">
-                We are proud to have partnered with diverse<br />
-                businesses that rely on ThinkNorth Services LLP<br />
-                as their trusted financial partner.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-8">
-              {[
-                "Fountainhead",
-                "Nouveau",
-                "Maxilk",
-                "Eminent Care",
-                "Venus+",
-                "Terra.do",
-                "HYOU",
-                "Shah",
-                "24/7",
-                "Wealth New Realty",
-                "---",
-                "Lambretta"
-              ].map((client, idx) => (
-                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
-                  <div className="text-center font-bold text-gray-700">{client}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Link
-                href="/collaborations"
-                className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
-              >
-                EXPLORE WHAT WE DELIVERED ➔
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ClientLogos
+          title="OUR ESTEEMED CLIENTS"
+          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
+        />
 
         {/* Testimonials */}
         <section className="py-20 bg-white">
@@ -364,7 +330,7 @@ export default function About() {
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-brand-dark px-8 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
+              className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
             >
               START TODAY ➔
             </Link>

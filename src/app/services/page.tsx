@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import ClientLogos from "@/components/ClientLogos";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import ServicesMarquee from "@/components/ServicesMarquee";
 
 export default function Services() {
   const [expandedService, setExpandedService] = useState<number | null>(null);
@@ -22,10 +26,10 @@ export default function Services() {
               <div>
                 <div className="text-sm mb-4">Think North Services LLP.</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  COMPREHENSIVE CA<br />SERVICES FOR<br />SUSTAINABLE GROWTH
+                  Strategic CA Solutions Designed for Long-Term Financial Confidence
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  We offer expert financial and advisory services that drive business efficiency. From Accounting to strategic advisory, tax filing to business setup, we provide end-to-end solutions tailored to your unique needs.
+                  We blend precision, insight, and proactive financial intelligence to deliver bookkeeping, advisory, audit, and compliance solutions tailored for the fast-evolving needs of startups, SMEs, corporates, and high-growth enterprises.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
@@ -51,39 +55,34 @@ export default function Services() {
         </section>
 
         {/* Services Strip */}
-        <div className="bg-white border-y border-gray-200 py-4">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-wrap justify-center gap-8 text-sm font-semibold text-gray-700">
-              <div>🎯 EXCELLENCE BOOKKEEPING & COMPLIANCE SERVICE</div>
-              <div>💼 PROVIDING FINANCIAL CLARITY THRU OUR EXPERTISE</div>
-              <div>📊 EXPERT TAX FILING & ADVISORY</div>
-              <div>💰 AUDIT & STRATEGIC CONSULTANCY SERVICES</div>
-            </div>
-          </div>
-        </div>
+        <ServicesMarquee />
 
         {/* Our Services Grid */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
-              <p className="text-gray-600">
-                We offer comprehensive strategic expertise tailored to help you<br />
-                grow, comply, and lead in your industry.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR EXPERTISE</h2>
+              <div className="text-gray-600 space-y-4">
+                <p>
+                  At Think North Services LLP, we provide integrated financial, strategic, and compliance solutions that help businesses scale smarter, stay compliant, and make confident decisions.
+                </p>
+                <p>
+                  Designed for modern enterprises, our offerings prioritize accuracy, agility, governance, and long-term business value
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
-                  alt="Financial Operations"
+                  alt="Global Financial Services"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Financial Operations</h3>
+                  <h3 className="font-bold text-lg mb-3">Global Financial & Compliance Services</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    We provide end-to-end financial operations support...
+                    High-level tax planning and compliance for corporates & HNIs...
                   </p>
                   <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
@@ -93,14 +92,14 @@ export default function Services() {
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
-                  alt="Strategic Advisory"
+                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop"
+                  alt="Finance & Accounting"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Strategic Advisory</h3>
+                  <h3 className="font-bold text-lg mb-3">Finance & Accounting Solutions</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Expert guidance for complex business challenges...
+                    Achieve financial clarity with streamlined accounting systems...
                   </p>
                   <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
@@ -111,13 +110,13 @@ export default function Services() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
-                  alt="Governance & Optimization"
+                  alt="Fundraising & Capital"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Governance & Optimization</h3>
+                  <h3 className="font-bold text-lg mb-3">Fundraising & Capital Advisory</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Ensure robust governance and optimization...
+                    Strengthen your capital strategy with structured financial storytelling...
                   </p>
                   <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
@@ -128,13 +127,13 @@ export default function Services() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
-                  alt="Audit & Compliance"
+                  alt="Audit & Due Diligence"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Audit & Compliance</h3>
+                  <h3 className="font-bold text-lg mb-3">Internal Audit & Due Diligence</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Comprehensive audit and compliance services...
+                    Protect your business with robust risk controls and assessments...
                   </p>
                   <button className="bg-brand text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full">
                     KNOW MORE ➔
@@ -154,12 +153,12 @@ export default function Services() {
         {/* Detailed Services */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-            {/* Financial Operations */}
+            {/* Service 1: Global Financial & Compliance Services */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">FINANCIAL OPERATIONS</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">GLOBAL FINANCIAL & COMPLIANCE SERVICES</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  We provide end-to-end financial operations support that helps you stay focused on your business. Our team brings expertise in bookkeeping, accounting, MIS preparation, and more.
+                  We deliver high-level tax planning, wealth structuring, and multinational compliance support for corporate groups, international businesses, and high-net-worth individuals.
                 </p>
                 <div className="space-y-4">
                   <div
@@ -171,41 +170,52 @@ export default function Services() {
                       {expandedService === 1 ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {expandedService === 1 && (
-                      <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                        <li>• Outsourced Accounting & Bookkeeping: Meticulous book financial record management</li>
-                        <li>• Budgeting & Forecasting: Strategic financial planning and projections</li>
-                        <li>• Financial Planning & Analysis (FP&A): Insightful reports and actionable data</li>
-                        <li>• Cash Flow Management: Optimized liquidity and working capital</li>
-                      </ul>
+                      <div className="mt-4 space-y-4 text-gray-600 text-sm">
+                        <div>
+                          <strong className="block mb-2 text-gray-900">Solutions for High-Net-Worth Individuals (HNIs)</strong>
+                          <ul className="space-y-1 pl-4 list-disc">
+                            <li>Holistic tax optimization and wealth planning</li>
+                            <li>Cross-border investment compliance</li>
+                            <li>Succession structuring and asset protection strategies</li>
+                            <li>Multi-jurisdiction advisory for global operations</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <strong className="block mb-2 text-gray-900">Solutions for Corporates</strong>
+                          <ul className="space-y-1 pl-4 list-disc">
+                            <li>International tax structuring</li>
+                            <li>Entity setup, restructuring & global expansion support</li>
+                            <li>Cross-border transaction advisory</li>
+                            <li>Corporate governance & regulatory compliance</li>
+                          </ul>
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>
               </div>
               <div className="order-1 md:order-2">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
-                  alt="Financial Operations"
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop"
+                  alt="Global Financial Services"
                   className="rounded-lg shadow-lg"
                 />
               </div>
             </div>
 
-            {/* Strategic Advisory */}
+            {/* Service 2: Finance & Accounting Solutions */}
             <div className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 p-8 rounded-lg">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
-                  alt="Strategic Advisory"
+                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+                  alt="Finance & Accounting"
                   className="rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">STRATEGIC ADVISORY</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">FINANCE & ACCOUNTING SOLUTIONS</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  <strong>Insight, fidelity, Expert Intervention ➜</strong>
-                </p>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  In an increasingly complex business environment, our strategic advisory services help you navigate growth, mergers, restructuring, and fundraising opportunities with confidence.
+                  Achieve financial clarity, improved controls, and real-time insights with streamlined accounting systems and expert financial management.
                 </p>
                 <div className="space-y-4">
                   <div
@@ -213,13 +223,15 @@ export default function Services() {
                     onClick={() => setExpandedService(expandedService === 2 ? null : 2)}
                   >
                     <div className="flex justify-between items-center">
-                      <h3 className="font-bold text-gray-900">Specialized Services:</h3>
+                      <h3 className="font-bold text-gray-900">Our offerings include ➜</h3>
                       {expandedService === 2 ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {expandedService === 2 && (
-                      <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                        <li>• Strategic Consulting & Business Analysis: Detailed assessments for strategy</li>
-                        <li>• Financial modeling & Scenario Analysis: Projections for informed decisions</li>
+                      <ul className="mt-4 space-y-2 text-gray-600 text-sm list-disc pl-4">
+                        <li>Accounting system setup & monthly bookkeeping</li>
+                        <li>MIS reporting, dashboards & decision-ready insights</li>
+                        <li>Working capital tracking, fund-flow analysis & ratio assessment</li>
+                        <li>ERP transition support & modernization of legacy systems</li>
                       </ul>
                     )}
                   </div>
@@ -227,15 +239,12 @@ export default function Services() {
               </div>
             </div>
 
-            {/* Governance & Optimization */}
+            {/* Service 3: Fundraising, Capital Advisory & Investor Documentation */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">GOVERNANCE & OPTIMIZATION</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">FUNDRAISING, CAPITAL ADVISORY & INVESTOR DOCUMENTATION</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  <strong>Structure, Control & Efficiency ➜</strong>
-                </p>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  We help you ensure that your organization operates at its peak efficiency with water-tight internal controls. We help you weave robust governance into your operations ensuring long-term stability.
+                  Strengthen your capital strategy with structured financial storytelling and investor-ready documentation. From early-stage ventures to established businesses, we support every stage of the funding journey.
                 </p>
                 <div className="space-y-4">
                   <div
@@ -243,14 +252,15 @@ export default function Services() {
                     onClick={() => setExpandedService(expandedService === 3 ? null : 3)}
                   >
                     <div className="flex justify-between items-center">
-                      <h3 className="font-bold text-gray-900">Key Services:</h3>
+                      <h3 className="font-bold text-gray-900">Our expertise covers ➜</h3>
                       {expandedService === 3 ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {expandedService === 3 && (
-                      <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                        <li>• Management Audits: In-depth review of internal functions</li>
-                        <li>• System & Process Assessment: Analysis and restructure of workflows</li>
-                        <li>• Internal Controls Review: Evaluate and design robust internal systems</li>
+                      <ul className="mt-4 space-y-2 text-gray-600 text-sm list-disc pl-4">
+                        <li>Fundraising strategy & capital structuring</li>
+                        <li>Investor pitch decks & board-level financial narratives</li>
+                        <li>Financial models, projections & valuation reports</li>
+                        <li>CMA data, projections & lender-ready submissions</li>
                       </ul>
                     )}
                   </div>
@@ -259,25 +269,25 @@ export default function Services() {
               <div className="order-1 md:order-2">
                 <img
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
-                  alt="Governance"
+                  alt="Fundraising & Capital"
                   className="rounded-lg shadow-lg"
                 />
               </div>
             </div>
 
-            {/* Audit & Compliance */}
+            {/* Service 4: Internal Audit, Due Diligence & Litigation Support */}
             <div className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 p-8 rounded-lg">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop"
-                  alt="Audit & Compliance"
+                  alt="Audit & Due Diligence"
                   className="rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">AUDIT & COMPLIANCE</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">INTERNAL AUDIT, DUE DILIGENCE & LITIGATION SUPPORT</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Our regulatory services facilitate a "reliability signature" compliance with all local and national regulations, combined with a proactive approach to audit and tax consultancy.
+                  Protect your business with robust risk controls, deep-dive assessments, and regulatory compliance frameworks.
                 </p>
                 <div className="space-y-4">
                   <div
@@ -285,14 +295,15 @@ export default function Services() {
                     onClick={() => setExpandedService(expandedService === 4 ? null : 4)}
                   >
                     <div className="flex justify-between items-center">
-                      <h3 className="font-bold text-gray-900">Our offerings include:</h3>
+                      <h3 className="font-bold text-gray-900">Our solutions include ➜</h3>
                       {expandedService === 4 ? <ChevronUp /> : <ChevronDown />}
                     </div>
                     {expandedService === 4 && (
-                      <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                        <li>• Statutory Audits: External and independent audits</li>
-                        <li>• Tax Audits: Income tax audit with comprehensive analysis</li>
-                        <li>• Certification & Assurance: Filing, reconciliation and expert opinion</li>
+                      <ul className="mt-4 space-y-2 text-gray-600 text-sm list-disc pl-4">
+                        <li>Internal audits for governance & operational efficiency</li>
+                        <li>Financial & legal due diligence for mergers, acquisitions & investments</li>
+                        <li>Litigation support, compliance management & regulatory representation</li>
+                        <li>Fraud detection, control reviews & process improvements</li>
                       </ul>
                     )}
                   </div>
@@ -355,44 +366,7 @@ export default function Services() {
         </section>
 
         {/* Client Logos */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
-              <p className="text-gray-600">Trusted by Businesses That Trust Numbers</p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-8">
-              {[
-                "Fountainhead",
-                "Nouveau",
-                "Maxilk",
-                "Eminent Care",
-                "Venus+",
-                "Terra.do",
-                "HYOU",
-                "Shah",
-                "24/7",
-                "Wealth New Realty",
-                "---",
-                "Lambretta"
-              ].map((client, idx) => (
-                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
-                  <div className="text-center font-bold text-gray-700">{client}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Link
-                href="/collaborations"
-                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
-              >
-                EXPLORE WHAT WE DELIVERED ➔
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ClientLogos title="OUR ESTEEMED CLIENTS" description="Trusted by Businesses That Trust Numbers" />
 
         {/* CTA Section */}
         <section className="relative py-20">
@@ -408,7 +382,7 @@ export default function Services() {
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-brand-dark px-8 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
+              className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
             >
               START TODAY ➔
             </Link>
