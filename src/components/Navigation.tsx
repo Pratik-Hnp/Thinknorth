@@ -113,6 +113,9 @@ export default function Navigation() {
                 )}
               </AnimatePresence>
             </div>
+            <Link href="/careers" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
+              Careers
+            </Link>
           </div>
 
           {/* Right Section: Contact & Mobile Menu */}
