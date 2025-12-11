@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Host_Grotesk } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const hostGrotesk = Host_Grotesk({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({
   children,
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${hostGrotesk.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased`}>
         <ErrorReporter />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
