@@ -53,15 +53,14 @@ export default function ClientLogos({
                                 hidden: { opacity: 0, y: 20 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                             }}
-                            whileHover={{ scale: 1.1, filter: "grayscale(0%)" }}
-                            className="flex items-center justify-center p-4 grayscale transition-all duration-300"
+                            className="flex items-center justify-center p-4"
                         >
                             <Image
                                 src={logo.src}
                                 alt={logo.alt}
                                 width={150}
                                 height={80}
-                                className="object-contain h-20 w-auto drop-shadow-sm hover:drop-shadow-md"
+                                className="object-contain h-20 w-auto drop-shadow-md"
                             />
                         </motion.div>
                     ))}
