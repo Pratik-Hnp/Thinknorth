@@ -73,7 +73,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
+                  src="/logos/final%201/Staff%20Area%20-%202.jpg"
                   alt="Finance & Accounting"
                   className="w-full h-48 object-cover"
                 />
@@ -90,7 +90,7 @@ export default function Home() {
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
+                  src="/logos/final%201/Conference%20-%202.jpg"
                   alt="Global Services"
                   className="w-full h-48 object-cover"
                 />
@@ -107,7 +107,7 @@ export default function Home() {
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+                  src="/logos/final%201/Cabin%201%20-%201.jpg"
                   alt="Fundraising & Advisory"
                   className="w-full h-48 object-cover"
                 />
@@ -124,7 +124,7 @@ export default function Home() {
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
+                  src="/logos/final%201/Cabin%202%20-%201.jpg"
                   alt="Audit & Diligence"
                   className="w-full h-48 object-cover"
                 />
@@ -191,9 +191,9 @@ export default function Home() {
 
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+                  src="/logos/final%201/Waiting%20-%201.jpg"
                   alt="Business presentation"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg h-[500px] w-full object-cover"
                 />
                 <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
                   <div className="text-4xl font-bold mb-2">20+</div>
@@ -327,7 +327,7 @@ export default function Home() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
+              backgroundImage: "url('/logos/final%201/Staff%20Area%20-%203.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>

@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-    "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop", // Financial professionals
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop", // Modern office
-    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop", // Business meeting
+    "/logos/final%201/Reception%20-%201.jpg",
+    "/logos/final%201/Conference%20-%201.jpg",
+    "/logos/final%201/Staff%20Area%20-%201.jpg",
 ];
 
 export default function HeroImageSlider() {

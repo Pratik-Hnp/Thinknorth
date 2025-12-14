@@ -41,9 +41,9 @@ export default function About() {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
+                  src="/logos/final%201/Reception%20-%203.jpg"
                   alt="Team meeting"
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
                 />
               </div>
             </div>
@@ -59,9 +59,9 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
+                  src="/logos/final%201/Reception%20-%204.jpg"
                   alt="Team collaboration"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg h-[500px] w-full object-cover"
                 />
               </div>
               <div>
@@ -180,22 +180,22 @@ export default function About() {
 
             <div className="grid md:grid-cols-4 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&h=400&fit=crop"
+                src="/logos/final%201/Cabin%201%20-%203.jpg"
                 alt="Office 1"
                 className="rounded-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=400&fit=crop"
+                src="/logos/final%201/Cabin%201%20-%204.jpg"
                 alt="Office 2"
                 className="rounded-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&h=400&fit=crop"
+                src="/logos/final%201/Cabin%201%20-%205.jpg"
                 alt="Office 3"
                 className="rounded-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=400&fit=crop"
+                src="/logos/final%201/Cabin%201%20-%206.jpg"
                 alt="Office 4"
                 className="rounded-lg w-full h-64 object-cover"
               />
@@ -221,9 +221,9 @@ export default function About() {
 
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                src="/logos/final%201/Cabin%201%20-%207.jpg"
                 alt="Services"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg h-[400px] w-full object-cover"
               />
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -277,7 +277,7 @@ export default function About() {
               <Card className="p-6">
                 <div className="flex gap-4">
                   <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=200&fit=crop"
+                    src="/logos/final%201/Cabin%202%20-%201.jpg"
                     alt="Client building"
                     className="w-24 h-24 object-cover rounded"
                   />
@@ -294,7 +294,7 @@ export default function About() {
               <Card className="p-6">
                 <div className="flex gap-4">
                   <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop"
+                    src="/logos/final%201/Cabin%202%20-%202.jpg"
                     alt="Client building"
                     className="w-24 h-24 object-cover rounded"
                   />
@@ -321,7 +321,7 @@ export default function About() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
+              backgroundImage: "url('/logos/final%201/Staff%20Area%20-%203.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>

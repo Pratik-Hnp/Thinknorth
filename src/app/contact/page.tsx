@@ -97,9 +97,9 @@ export default function Contact() {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
+                  src="/logos/final%201/Reception%20-%203.jpg"
                   alt="Team collaboration"
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
                 />
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function Contact() {
               <Card className="p-6">
                 <div className="flex gap-4">
                   <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=200&fit=crop"
+                    src="/logos/final%201/Cabin%202%20-%201.jpg"
                     alt="Client building"
                     className="w-24 h-24 object-cover rounded"
                   />
@@ -349,7 +349,7 @@ export default function Contact() {
               <Card className="p-6">
                 <div className="flex gap-4">
                   <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop"
+                    src="/logos/final%201/Cabin%202%20-%202.jpg"
                     alt="Client building"
                     className="w-24 h-24 object-cover rounded"
                   />
