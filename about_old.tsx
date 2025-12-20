@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,8 +6,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
-import ClientLogos from "@/components/ClientLogos";
-import ServicesMarquee from "@/components/ServicesMarquee";
 
 export default function About() {
   return (
@@ -23,27 +21,27 @@ export default function About() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   YOUR GROWTH, OUR<br />EXPERTISE
                 </h1>
-                <p className="text-lg font-semibold mb-4">INTEGRITY · INSIGHT · IMPACT</p>
+                <p className="text-lg font-semibold mb-4">INTEGRITY ┬╖ INSIGHT ┬╖ IMPACT</p>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
                   At Think North Services LLP., we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
-                  CONNECT NOW ➔
+                  CONNECT NOW Γ₧ö
                 </button>
-                {/* <div className="mt-6 flex items-center gap-4">
+                <div className="mt-6 flex items-center gap-4">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-yellow-400">★</span>
+                      <span key={star} className="text-yellow-400">Γÿà</span>
                     ))}
                   </div>
                   <span className="text-sm">5/5 rated by businesses</span>
-                </div> */}
+                </div>
               </div>
               <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
                   alt="Team meeting"
-                  className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
+                  className="rounded-lg shadow-2xl"
                 />
               </div>
             </div>
@@ -51,7 +49,16 @@ export default function About() {
         </section>
 
         {/* Services Strip */}
-        <ServicesMarquee />
+        <div className="bg-white border-y border-gray-200 py-4">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="flex flex-wrap justify-center gap-8 text-sm font-semibold text-gray-700">
+              <div>≡ƒÄ» EXCELLENCE ENCOMPASSING COMPLIANCE SUPPORT</div>
+              <div>≡ƒÆ╝ MEET OUR TEAM & EXPERTISE</div>
+              <div>≡ƒôè ENGAGING AUDIT & ASSURANCE SERVICES</div>
+              <div>≡ƒÆ░ OTHERS</div>
+            </div>
+          </div>
+        </div>
 
         {/* About Us Section */}
         <section className="py-20 bg-white">
@@ -61,22 +68,14 @@ export default function About() {
                 <img
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
                   alt="Team collaboration"
-                  className="rounded-lg shadow-lg h-[500px] w-full object-cover"
+                  className="rounded-lg shadow-lg"
                 />
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">ABOUT US</h2>
-                <div className="text-gray-600 leading-relaxed mb-6 space-y-4">
-                  <p>
-                    Think North Services LLP is a forward-thinking financial consultancy firm delivering end-to-end solutions in finance, accounting, taxation, and strategic advisory. With a focus on precision, innovation, and global-quality standards, we help businesses navigate evolving financial landscapes with clarity and confidence.
-                  </p>
-                  <p>
-                    Built on deep industry expertise, modern analytical tools, and a commitment to proactive problem-solving, we partner with startups, SMEs, corporates, and high-net-worth individuals to drive scalable growth. Our approach goes beyond traditional consulting—every engagement is structured to strengthen financial discipline, enhance compliance, and unlock long-term value.
-                  </p>
-                  <p>
-                    From optimizing financial operations to crafting board-ready insights, Think North Services LLP is dedicated to being your trusted strategic finance partner. We ensure that every decision is backed by data, foresight, and a strong understanding of your unique business ecosystem.
-                  </p>
-                </div>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Established in 2009 to provide complete Financial Intelligence, <strong>Think North Services LLP.</strong> is a Full-service Chartered Accountancy firm offering specialized advisory and accounting services. With a team of highly qualified professionals bringing years, diligence, and dedication, we help clients navigate the more, financial, complex, and financial decisions.
+                </p>
               </div>
             </div>
           </div>
@@ -88,21 +87,21 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-brand mr-3">➜</span>
+                  <span className="text-brand mr-3">Γ₧£</span>
                   VISION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  To be the trusted global partner for corporates, high-net-worth individuals, and professionals, empowering them with innovative financial strategies and precision-driven advisory for sustainable growth and long-term success.
+                  To become the most trusted and forward-thinking Chartered Accountancy firm, offering strategic solutions that fuel growth and success for every business we work with.
                 </p>
               </Card>
 
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-brand mr-3">➜</span>
+                  <span className="text-brand mr-3">Γ₧£</span>
                   MISSION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  At Think North Services, our mission is to provide expert financial consultancy, strategic insights, and compliance solutions to businesses and individuals worldwide. We aim to simplify complex financial landscapes, ensuring value-driven outcomes through precision, integrity, and a client-focused approach.
+                  We empower clients with financial clarity through expert, comprehensive services in auditing, taxation, and advisory. We support businesses of all sizes on a true partner in your financial journey.
                 </p>
               </Card>
             </div>
@@ -110,7 +109,7 @@ export default function About() {
         </section>
 
         {/* Meet the Team */}
-        {/* <section className="py-20 bg-white">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
@@ -157,25 +156,21 @@ export default function About() {
 
             <div className="bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
-                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
+                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just serviceΓÇöthey earn a trusted financial partner.
               </p>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Office Gallery */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">INSIDE THINK NORTH SERVICES LLP</h2>
-              <div className="text-gray-600 space-y-4">
-                <p>
-                  Step into a workspace where structure meets strategy and every corner reflects our commitment to excellence. Our office environment is designed to inspire focus, collaboration, and meaningful conversations. The curated wall art, warm aesthetics, and organized layouts showcase the thinking culture that drives our financial advisory expertise.
-                </p>
-                <p>
-                  These snapshots offer a glimpse into our everyday setting—where ideas evolve, insights are crafted, and decisions that shape businesses are made. It’s more than an office; it’s the space where numbers turn into narratives and plans turn into performance.
-                </p>
-              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">OFFICE SNAPSHOT GALLERY</h2>
+              <p className="text-gray-600">
+                Take a look around our workspaceΓÇö<br />
+                Where Numbers Meet Precision. Our Thriving Environment.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-4 gap-4">
@@ -202,8 +197,8 @@ export default function About() {
             </div>
 
             <div className="text-center mt-8">
-              <button className="bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
-                VISIT OUR OFFICE ➔
+              <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                VISIT OUR OFFICE Γ₧ö
               </button>
             </div>
           </div>
@@ -215,7 +210,8 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
               <p className="text-gray-600">
-                At Think North Services LLP, we deliver comprehensive financial and strategic solutions designed to help you grow, comply, and lead with confidence. Our services are crafted for modern businesses that demand accuracy, agility, and accountability in every financial move.
+                We offer comprehensive strategic expertise tailored to help you<br />
+                grow, comply, and lead in your industry.
               </p>
             </div>
 
@@ -223,12 +219,12 @@ export default function About() {
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
                 alt="Services"
-                className="rounded-lg shadow-lg h-[400px] w-full object-cover"
+                className="rounded-lg shadow-lg"
               />
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-yellow-100 px-4 py-2 rounded font-semibold whitespace-nowrap">
-                    ⭐ Trusted by 100+ businesses
+                    Γ¡É Trusted by 100+ businesses
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -247,9 +243,9 @@ export default function About() {
                 </div>
                 <Link
                   href="/services"
-                  className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+                  className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
                 >
-                  EXPLORE YOUR OPTIONS ➔
+                  EXPLORE OUR OFFERINGS Γ₧ö
                 </Link>
               </div>
             </div>
@@ -257,10 +253,48 @@ export default function About() {
         </section>
 
         {/* Client Logos */}
-        <ClientLogos
-          title="OUR ESTEEMED CLIENTS"
-          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
-        />
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
+              <p className="text-gray-600">
+                We are proud to have partnered with diverse<br />
+                businesses that rely on ThinkNorth Services LLP<br />
+                as their trusted financial partner.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-8">
+              {[
+                "Fountainhead",
+                "Nouveau",
+                "Maxilk",
+                "Eminent Care",
+                "Venus+",
+                "Terra.do",
+                "HYOU",
+                "Shah",
+                "24/7",
+                "Wealth New Realty",
+                "---",
+                "Lambretta"
+              ].map((client, idx) => (
+                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
+                  <div className="text-center font-bold text-gray-700">{client}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link
+                href="/collaborations"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+              >
+                EXPLORE WHAT WE DELIVERED Γ₧ö
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Testimonials */}
         <section className="py-20 bg-white">
@@ -330,9 +364,9 @@ export default function About() {
             <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
-              className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
+              className="inline-block bg-white text-brand-dark px-8 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"
             >
-              START TODAY ➔
+              START TODAY Γ₧ö
             </Link>
           </div>
         </section>

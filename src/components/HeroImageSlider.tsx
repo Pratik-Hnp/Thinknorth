@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-    "/logos/final%201/Reception%20-%201.jpg",
-    "/logos/final%201/Conference%20-%201.jpg",
-    "/logos/final%201/Staff%20Area%20-%201.jpg",
+    "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&h=900&fit=crop",
+    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=900&fit=crop",
+    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=900&fit=crop",
 ];
 
 export default function HeroImageSlider() {

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -6,31 +6,38 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
-import ClientLogos from "@/components/ClientLogos";
-import ServicesMarquee from "@/components/ServicesMarquee";
 
 const contactChannels = [
   {
-    icon: "📞",
+    icon: "≡ƒô₧",
     label: "Phone",
     value: "+91 80000 98089",
     href: "tel:+918000098089"
   },
   {
-    icon: "✉️",
+    icon: "Γ£ë∩╕Å",
     label: "Email",
     value: "vardhan@thinknorth.co.in",
     href: "mailto:vardhan@thinknorth.co.in"
   },
   {
-    icon: "🌐",
+    icon: "≡ƒîÉ",
     label: "Website",
     value: "www.thinknorth.co.in",
     href: "https://www.thinknorth.co.in"
   }
 ];
 
-
+const officeLocations = [
+  {
+    title: "Surat HQ",
+    lines: ["806, Rajhans Montessa, Airport Road,", "Surat - 395007"]
+  },
+  {
+    title: "Mumbai Office",
+    lines: ["503, Neelkanth Corporate Park,", "Vidya Vihar West, Mumbai - 400086"]
+  }
+];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,8 +46,6 @@ export default function Contact() {
     email: "",
     message: ""
   });
-
-  const [activeLocation, setActiveLocation] = useState<'Surat' | 'Mumbai'>('Surat');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,53 +66,37 @@ export default function Contact() {
                   Your Direction to Smarter Financial Choices
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  ThinkNorth Services LLP blends strategic finance, compliance, and technology to guide ambitious teams with clarity. Let’s design clearer paths for growth from Surat to Mumbai and beyond.
+                  ThinkNorth Services LLP blends strategic finance, compliance, and technology to guide ambitious teams with clarity. LetΓÇÖs design clearer paths for growth from Surat to Mumbai and beyond.
                 </p>
-                <div className="space-y-6 mt-8">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                      <span className="text-2xl">🚀</span>
+                <div className="space-y-4">
+                  {contactChannels.map((channel) => (
+                    <div key={channel.label} className="flex items-start gap-3">
+                      <span className="text-2xl">{channel.icon}</span>
+                      <div>
+                        <div className="font-semibold">{channel.label}:</div>
+                        <a
+                          href={channel.href}
+                          className="text-brand-lighter hover:text-white transition-colors"
+                          target={channel.href.startsWith("http") ? "_blank" : undefined}
+                          rel={channel.href.startsWith("http") ? "noreferrer" : undefined}
+                        >
+                          {channel.value}
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-white">Growth-Ready Advisory</h3>
-                      <p className="text-brand-lighter text-sm">Strategic guidance for startups and SMEs</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                      <span className="text-2xl">🛡️</span>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-white">Compliance Excellence</h3>
-                      <p className="text-brand-lighter text-sm">Dependable tax and regulatory support</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
-                      <span className="text-2xl">💡</span>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-white">Tech-Forward Solutions</h3>
-                      <p className="text-brand-lighter text-sm">Modern tools for financial clarity</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
                   alt="Team collaboration"
-                  className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
+                  className="rounded-lg shadow-2xl"
                 />
               </div>
             </div>
           </div>
         </section>
-
-        {/* Services Strip */}
-        <ServicesMarquee />
 
         {/* Contact Form Section */}
         <section className="py-20 bg-white">
@@ -115,15 +104,12 @@ export default function Contact() {
             <div className="grid md:grid-cols-2 gap-12">
               {/* Left Side - Contact Info */}
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                <p className="text-xl text-brand font-medium mb-6">
-                  Looking for structured financial support, growth-ready advisory, or dependable tax guidance?
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">GET IN TOUCH</h2>
+                <p className="text-gray-600 mb-8 leading-relaxed">
+                  Whether you're a startup seeking structure, a business planning for growth, or an individual looking for tax clarity ΓÇö we're here to help.
                 </p>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  At ThinkNorth Services, we help startups, SMEs, corporates, and individuals navigate every financial challenge with confidence, always pointing you toward the <strong>Right Direction</strong>.
-                </p>
-                <p className="text-gray-800 mb-8 font-semibold">
-                  Get in touch and let’s build the path that leads your business <strong>True North</strong> toward its next stage of growth.
+                <p className="text-gray-700 mb-4">
+                  Discover firsthand how <strong>Think North Services LLP.</strong> can support your goals.
                 </p>
 
                 <div className="space-y-6 mt-8">
@@ -211,9 +197,9 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
+                    className="w-full bg-brand-dark text-white px-6 py-3 rounded font-semibold hover:bg-brand transition-colors"
                   >
-                    SUBMIT ➔
+                    SUBMIT Γ₧ö
                   </button>
                 </form>
               </Card>
@@ -222,100 +208,91 @@ export default function Contact() {
         </section>
 
         {/* Map Section */}
-        <section className="relative h-[600px] w-full overflow-hidden">
-          {/* Full Width Map Background */}
-          <div className="absolute inset-0 w-full h-full">
-            <iframe
-              src={activeLocation === 'Surat'
-                ? "https://www.google.com/maps?q=Rajhans%20Montessa%20Surat&output=embed"
-                : "https://www.google.com/maps?q=Neelkanth%20Corporate%20Park%20Mumbai&output=embed"
-              }
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: "grayscale(100%) contrast(1.2) opacity(0.85)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Office Location"
-              className="w-full h-full"
-            />
-          </div>
-
-          {/* Floating Content Card */}
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-            <div className="bg-white/90 backdrop-blur-md p-8 md:p-10 rounded-2xl shadow-2xl max-w-md w-full border border-white/50">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Visit Our Strategy Hubs
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Select a location to view on map
-              </p>
-
-              {/* Location Toggles */}
-              <div className="flex bg-gray-100 p-1 rounded-lg mb-8">
-                <button
-                  onClick={() => setActiveLocation('Surat')}
-                  className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all ${activeLocation === 'Surat'
-                    ? "bg-white text-brand shadow-sm"
-                    : "text-gray-500 hover:text-gray-900"
-                    }`}
-                >
-                  Surat HQ
-                </button>
-                <button
-                  onClick={() => setActiveLocation('Mumbai')}
-                  className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all ${activeLocation === 'Mumbai'
-                    ? "bg-white text-brand shadow-sm"
-                    : "text-gray-500 hover:text-gray-900"
-                    }`}
-                >
-                  Mumbai Office
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Card className="p-8">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Visit our strategy hubs in Surat &amp; Mumbai
+                </h2>
+                <button className="bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors">
+                  PLAN A VISIT Γ₧ö
                 </button>
               </div>
 
-              {/* Active Location Details */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                    <span className="text-brand mr-2">📍</span>
-                    {activeLocation === 'Surat' ? "Surat Headquarters" : "Mumbai Branch"}
-                  </h3>
-                  <div className="text-gray-600 pl-7 space-y-1">
-                    {activeLocation === 'Surat' ? (
-                      <>
-                        <p>806, Rajhans Montessa,</p>
-                        <p>Airport Road, Surat - 395007</p>
-                      </>
-                    ) : (
-                      <>
-                        <p>503, Neelkanth Corporate Park,</p>
-                        <p>Vidya Vihar West, Mumbai - 400086</p>
-                      </>
-                    )}
+              {/* Embedded Map */}
+              <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Rajhans%20Montessa%20Surat&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Surat Office Location"
+                />
+              </div>
+
+              <div className="mt-10 grid md:grid-cols-2 gap-6">
+                {officeLocations.map((office) => (
+                  <div key={office.title} className="rounded-lg border border-brand-light p-6 text-left">
+                    <p className="text-sm uppercase tracking-[0.2em] text-brand mb-2">Office</p>
+                    <p className="font-semibold text-gray-900 mb-2">{office.title}</p>
+                    {office.lines.map((line) => (
+                      <p key={line} className="text-gray-600">
+                        {line}
+                      </p>
+                    ))}
                   </div>
-                </div>
-
-                <a
-                  href={activeLocation === 'Surat'
-                    ? "https://www.google.com/maps?q=Rajhans%20Montessa%20Surat"
-                    : "https://www.google.com/maps?q=Neelkanth%20Corporate%20Park%20Mumbai"
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-brand text-white text-center px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
-                >
-                  GET DIRECTIONS ➔
-                </a>
+                ))}
               </div>
-            </div>
+            </Card>
           </div>
         </section>
 
         {/* Client Logos */}
-        <ClientLogos
-          title="OUR ESTEEMED CLIENTS"
-          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
-        />
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
+              <p className="text-gray-600">Trusted by Businesses That Trust Numbers</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-12">
+              {[
+                "Fountainhead",
+                "Nouveau",
+                "Maxilk",
+                "Eminent Care",
+                "Venus+",
+                "Terra.do",
+                "HYOU",
+                "Shah",
+                "24/7",
+                "Wealth New Realty",
+                "---",
+                "Lambretta"
+              ].map((client, idx) => (
+                <div key={idx} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all">
+                  <div className="text-center font-bold text-gray-700">{client}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <p className="text-sm text-gray-600 mb-6">
+                Here are just a few of the businesses that have chosen K.P. Bhagat & Co. as their trusted financial partner.
+              </p>
+              <Link
+                href="/collaborations"
+                className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
+              >
+                EXPLORE WHAT WE DELIVERED Γ₧ö
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Testimonials */}
         <section className="py-20 bg-gray-50">

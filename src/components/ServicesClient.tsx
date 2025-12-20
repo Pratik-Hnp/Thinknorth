@@ -55,7 +55,7 @@ export default function ServicesClient() {
                             </div>
                             <div className="relative">
                                 <img
-                                    src="/logos/final%201/Staff%20Area%20-%204.jpg"
+                                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
                                     alt="Business meeting"
                                     className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
                                 />
@@ -85,7 +85,7 @@ export default function ServicesClient() {
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                                 <img
-                                    src="/logos/final%201/Reception%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
                                     alt="Global Financial Services"
                                     className="w-full h-48 object-cover"
                                 />
@@ -105,7 +105,7 @@ export default function ServicesClient() {
 
                             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                                 <img
-                                    src="/logos/final%201/Staff%20Area%20-%205.jpg"
+                                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
                                     alt="Finance & Accounting"
                                     className="w-full h-48 object-cover"
                                 />
@@ -125,7 +125,7 @@ export default function ServicesClient() {
 
                             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                                 <img
-                                    src="/logos/final%201/Waiting%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
                                     alt="Fundraising & Capital"
                                     className="w-full h-48 object-cover"
                                 />
@@ -145,7 +145,7 @@ export default function ServicesClient() {
 
                             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                                 <img
-                                    src="/logos/final%201/Cabin%201%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
                                     alt="Audit & Due Diligence"
                                     className="w-full h-48 object-cover"
                                 />
@@ -218,7 +218,7 @@ export default function ServicesClient() {
                             </div>
                             <div className="order-1 md:order-2">
                                 <img
-                                    src="/logos/final%201/Reception%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
                                     alt="Global Financial Services"
                                     className="rounded-lg shadow-lg h-[400px] w-full object-cover"
                                 />
@@ -229,7 +229,7 @@ export default function ServicesClient() {
                         <div id="service-2" className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 p-8 rounded-lg">
                             <div>
                                 <img
-                                    src="/logos/final%201/Staff%20Area%20-%205.jpg"
+                                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
                                     alt="Finance & Accounting"
                                     className="rounded-lg shadow-lg h-[400px] w-full object-cover"
                                 />
@@ -290,7 +290,7 @@ export default function ServicesClient() {
                             </div>
                             <div className="order-1 md:order-2">
                                 <img
-                                    src="/logos/final%201/Waiting%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
                                     alt="Fundraising & Capital"
                                     className="rounded-lg shadow-lg h-[400px] w-full object-cover"
                                 />
@@ -301,7 +301,7 @@ export default function ServicesClient() {
                         <div id="service-4" className="grid md:grid-cols-2 gap-12 items-center bg-gray-50 p-8 rounded-lg">
                             <div>
                                 <img
-                                    src="/logos/final%201/Cabin%201%20-%202.jpg"
+                                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
                                     alt="Audit & Due Diligence"
                                     className="rounded-lg shadow-lg h-[400px] w-full object-cover"
                                 />
@@ -372,7 +372,7 @@ export default function ServicesClient() {
 
                             <div className="relative">
                                 <img
-                                    src="/logos/final%201/Waiting%20-%203.jpg"
+                                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
                                     alt="Business presentation"
                                     className="rounded-lg shadow-lg h-[500px] w-full object-cover"
                                 />
@@ -395,7 +395,7 @@ export default function ServicesClient() {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: "url('/logos/final%201/Staff%20Area%20-%206.jpg')",
+                            backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')",
                         }}
                     >
                         <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
