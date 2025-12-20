@@ -21,12 +21,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">Think North Services LLP.</div>
+                <div className="text-sm mb-4">Think North</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   EMPOWERING<br />FINANCIAL SUCCESS FOR<br />OVER 15 YEARS
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  Think North Services LLP. has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
+                  Think North has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW Γ₧ö
@@ -264,7 +264,7 @@ export default function Home() {
 
             <div className="bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
-                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just serviceΓÇöthey earn a trusted financial partner.
+                At Think North, our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just serviceΓÇöthey earn a trusted financial partner.
               </p>
             </div>
           </div>

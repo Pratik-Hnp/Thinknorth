@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import ServicesMarquee from "@/components/ServicesMarquee";
 import HeroImageSlider from "@/components/HeroImageSlider";
 import ClientLogos from "@/components/ClientLogos";
+import { BlinkingEye, TargetHit } from "@/components/AnimatedIcons";
 
 export default function Home() {
   const teamRef = useRef(null);
@@ -165,7 +166,9 @@ export default function Home() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-brand mr-2">➜</span>
+                      <div className="mr-2 text-brand mt-0.5">
+                        <BlinkingEye className="w-5 h-5" />
+                      </div>
                       VISION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -175,7 +178,9 @@ export default function Home() {
 
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
-                      <span className="text-brand mr-2">➜</span>
+                      <div className="mr-2 text-brand mt-0.5">
+                        <TargetHit className="w-5 h-5" />
+                      </div>
                       MISSION
                     </h3>
                     <p className="text-gray-600 ml-6">
@@ -256,7 +261,7 @@ export default function Home() {
 
             <div className="bg-gray-100 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
-                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
+                At Think North, our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
               </p>
             </div>
           </div>
@@ -333,7 +338,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">Thinking of numbers?<br />Think North.</h2>
+            <h2 className="text-4xl font-bold mb-6">Thinking of Numbers?<br />Think North</h2>
             <Link
               href="/contact"
               className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"

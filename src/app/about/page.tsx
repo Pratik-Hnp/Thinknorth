@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -8,6 +9,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 import ClientLogos from "@/components/ClientLogos";
 import ServicesMarquee from "@/components/ServicesMarquee";
+import OfficeGallery from "@/components/OfficeGallery";
+import { BlinkingEye, TargetHit } from "@/components/AnimatedIcons";
 
 export default function About() {
   return (
@@ -19,13 +22,13 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">Think North Services LLP.</div>
+                <div className="text-sm mb-4">Think North</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   YOUR GROWTH, OUR<br />EXPERTISE
                 </h1>
                 <p className="text-lg font-semibold mb-4">INTEGRITY · INSIGHT · IMPACT</p>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  At Think North Services LLP., we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
+                  At Think North, we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
@@ -88,7 +91,9 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-brand mr-3">➜</span>
+                  <div className="mr-3 text-brand">
+                    <BlinkingEye className="w-6 h-6" />
+                  </div>
                   VISION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -98,7 +103,9 @@ export default function About() {
 
               <Card className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-brand mr-3">➜</span>
+                  <div className="mr-3 text-brand">
+                    <TargetHit className="w-6 h-6" />
+                  </div>
                   MISSION
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -157,7 +164,7 @@ export default function About() {
 
             <div className="bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-700 text-center leading-relaxed">
-                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
+                At Think North, our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
               </p>
             </div>
           </div>
@@ -178,34 +185,12 @@ export default function About() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&h=400&fit=crop"
-                alt="Office 1"
-                className="rounded-lg w-full h-64 object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=400&fit=crop"
-                alt="Office 2"
-                className="rounded-lg w-full h-64 object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&h=400&fit=crop"
-                alt="Office 3"
-                className="rounded-lg w-full h-64 object-cover"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=400&fit=crop"
-                alt="Office 4"
-                className="rounded-lg w-full h-64 object-cover"
-              />
-            </div>
-
-            <div className="text-center mt-8">
+            <OfficeGallery />
+            {/* <div className="text-center mt-8">
               <button className="bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
                 VISIT OUR OFFICE ➔
               </button>
-            </div>
+            </div> */}
           </div>
         </section>
 

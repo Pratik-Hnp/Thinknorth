@@ -42,7 +42,7 @@ export default function ServicesClient() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div>
-                                <div className="text-sm mb-4">Think North Services LLP.</div>
+                                <div className="text-sm mb-4">Think North</div>
                                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                                     Strategic CA Solutions Designed for Long-Term Financial Confidence
                                 </h1>
