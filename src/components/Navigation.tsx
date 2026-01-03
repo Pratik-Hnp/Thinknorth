@@ -2,7 +2,7 @@
 
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import AnimatedLogo from "./AnimatedLogo";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,22 +10,36 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const isSolid = isScrolled || isOpen;
+  const textColorClass = isSolid ? "text-gray-700 hover:text-brand" : "text-white hover:text-brand-lighter";
+  const mobileMenuButtonClass = isSolid ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10";
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${isSolid ? "bg-white border-gray-200 shadow-sm" : "bg-transparent border-transparent"
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 relative">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className={`flex-shrink-0 transition-all duration-300 ${!isSolid ? "brightness-0 invert" : ""}`}>
             <AnimatedLogo />
           </div>
 
           {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex items-center space-x-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <Link href="/" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
+            <Link href="/" className={`${textColorClass} transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full`}>
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
+            <Link href="/about" className={`${textColorClass} transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full`}>
               About
             </Link>
 
@@ -37,7 +51,7 @@ export default function Navigation() {
             >
               <Link
                 href="/services"
-                className={`text-gray-700 hover:text-brand transition-colors font-medium relative py-2 flex items-center gap-1 ${isServicesOpen ? 'text-brand' : ''}`}
+                className={`${isServicesOpen ? 'text-brand' : textColorClass} transition-colors font-medium relative py-2 flex items-center gap-1`}
               >
                 Services
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
@@ -73,16 +87,7 @@ export default function Navigation() {
                         {/* Right Column: Links */}
                         <div className="col-span-8 space-y-2">
                           <Link
-                            href="/services?id=1"
-                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                          >
-                            <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Global Financial & Compliance</span>
-                            <span className="text-gray-400 group-hover:text-brand transition-colors">➔</span>
-                          </Link>
-                          <div className="h-px bg-gray-100 mx-3"></div>
-
-                          <Link
-                            href="/services?id=2"
+                            href="/services/finance-accounting-solutions"
                             className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
                           >
                             <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Finance & Accounting</span>
@@ -91,7 +96,16 @@ export default function Navigation() {
                           <div className="h-px bg-gray-100 mx-3"></div>
 
                           <Link
-                            href="/services?id=3"
+                            href="/services/global-financial-compliance"
+                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                          >
+                            <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Global Financial & Compliance</span>
+                            <span className="text-gray-400 group-hover:text-brand transition-colors">➔</span>
+                          </Link>
+                          <div className="h-px bg-gray-100 mx-3"></div>
+
+                          <Link
+                            href="/services/fundraising-capital-advisory"
                             className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
                           >
                             <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Fundraising & Capital Advisory</span>
@@ -100,7 +114,7 @@ export default function Navigation() {
                           <div className="h-px bg-gray-100 mx-3"></div>
 
                           <Link
-                            href="/services?id=4"
+                            href="/services/audit-due-diligence"
                             className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
                           >
                             <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Audit, Due Diligence & Litigation</span>
@@ -113,7 +127,7 @@ export default function Navigation() {
                 )}
               </AnimatePresence>
             </div>
-            <Link href="/careers" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
+            <Link href="/careers" className={`${textColorClass} transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full`}>
               Careers
             </Link>
           </div>
@@ -130,7 +144,7 @@ export default function Navigation() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+              className={`md:hidden p-2 rounded-md transition-colors ${mobileMenuButtonClass}`}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -140,7 +154,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
+        <div className="md:hidden border-t border-gray-200 bg-white shadow-xl">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               href="/"
@@ -162,6 +176,13 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/careers"
+              className="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Careers
             </Link>
             {/* <Link
               href="/collaborations"

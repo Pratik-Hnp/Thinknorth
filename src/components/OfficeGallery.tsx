@@ -181,16 +181,16 @@ export default function OfficeGallery() {
 
                         <button
                             onClick={handlePrev}
-                            className="absolute left-6 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white bg-white/10 rounded-full hover:bg-white/20 transition-all z-20 hidden md:block"
+                            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 p-2 md:p-3 text-white/70 hover:text-white bg-white/10 rounded-full hover:bg-white/20 transition-all z-20"
                         >
-                            <ChevronLeft size={40} />
+                            <ChevronLeft className="w-8 h-8 md:w-10 md:h-10" />
                         </button>
 
                         <button
                             onClick={handleNext}
-                            className="absolute right-6 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white bg-white/10 rounded-full hover:bg-white/20 transition-all z-20 hidden md:block"
+                            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 p-2 md:p-3 text-white/70 hover:text-white bg-white/10 rounded-full hover:bg-white/20 transition-all z-20"
                         >
-                            <ChevronRight size={40} />
+                            <ChevronRight className="w-8 h-8 md:w-10 md:h-10" />
                         </button>
 
                         {/* Image Container with Zoom */}

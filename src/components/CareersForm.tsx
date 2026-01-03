@@ -27,6 +27,7 @@ const positions = [
     "Audit Manager",
     "Accountant",
     "HR Executive",
+    "Business Development Manager",
     "Other",
 ];
 
@@ -196,8 +197,8 @@ export default function CareersForm() {
                         type="submit"
                         disabled={isSubmitting || !isCaptchaValid}
                         className={`w-full py-3 rounded-lg font-semibold text-white transition-all flex items-center justify-center gap-2 ${isSubmitting || !isCaptchaValid
-                                ? "bg-gray-400 cursor-not-allowed"
-                                : "bg-brand hover:bg-brand-dark shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                            ? "bg-gray-400 cursor-not-allowed"
+                            : "bg-brand hover:bg-brand-dark shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             }`}
                     >
                         {isSubmitting ? (

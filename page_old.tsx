@@ -301,7 +301,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="text-sm text-gray-600 mb-6">
-                Here are just a few of the businesses partnering with ThinkNorth Services LLP for clarity and growth.
+                Here are just a few of the businesses partnering with ThinkNorth for clarity and growth.
               </p>
               <Link
                 href="/collaborations"
@@ -334,7 +334,7 @@ export default function Home() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      ThinkNorth Services LLP has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
+                      ThinkNorth has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
                     </p>
                     <div className="mt-4">
                       <div className="font-bold">Mr. James John</div>
@@ -353,7 +353,7 @@ export default function Home() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed">
-                      ThinkNorth Services LLP has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional.
+                      ThinkNorth has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional.
                     </p>
                     <div className="mt-4">
                       <div className="font-bold">CA Adesh Mehta</div>

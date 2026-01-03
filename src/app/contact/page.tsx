@@ -61,7 +61,7 @@ export default function Contact() {
                   Your Direction to Smarter Financial Choices
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  ThinkNorth Services LLP blends strategic finance, compliance, and technology to guide ambitious teams with clarity. Let’s design clearer paths for growth from Surat to Mumbai and beyond.
+                  ThinkNorth blends strategic finance, compliance, and technology to guide ambitious teams with clarity. Let’s design clearer paths for growth from Surat to Mumbai and beyond.
                 </p>
                 <div className="space-y-6 mt-8">
                   <div className="flex items-center gap-4">
@@ -314,7 +314,7 @@ export default function Contact() {
         {/* Client Logos */}
         <ClientLogos
           title="OUR ESTEEMED CLIENTS"
-          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
+          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth as their trusted financial partner."
         />
 
         {/* Testimonials */}

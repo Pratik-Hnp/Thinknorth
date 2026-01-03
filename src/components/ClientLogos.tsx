@@ -74,10 +74,8 @@ export default function ClientLogos({
                         className="flex flex-wrap justify-center gap-8 items-center"
                     >
                         {[
-                            { src: "/logos/7425b29e79ecffb5654f526bede7bf12.w400.h400-Photoroom.png", alt: "Client 6" },
                             { src: "/logos/E5AE8FE899B9Logo-E7AB96E78988-835-scaled-Photoroom.png", alt: "Client 7" },
                             { src: "/logos/WhatsApp Image 2025-11-24 at 11.44.06 PM-Photoroom.png", alt: "Client 8" },
-                            { src: "/logos/images (3).png", alt: "Client 10" },
                         ].map((logo, idx) => (
                             <motion.div
                                 key={idx}

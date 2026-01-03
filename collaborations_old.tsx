@@ -120,7 +120,7 @@ export default function Collaborations() {
             </div>
 
             <p className="mt-12 text-lg text-brand-lighter">
-              Here are just a few of the businesses that partner with ThinkNorth Services LLP for clarity and confidence.
+              Here are just a few of the businesses that partner with ThinkNorth for clarity and confidence.
             </p>
             <button className="mt-8 bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
               EXPLORE WHAT WE DELIVERED Γ₧ö
@@ -134,9 +134,8 @@ export default function Collaborations() {
             {clients.map((client, idx) => (
               <div
                 key={idx}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
-                  idx % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`grid md:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={idx % 2 === 1 ? "md:order-2" : ""}>
                   <img
@@ -162,7 +161,7 @@ export default function Collaborations() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
               <p className="text-gray-700">
                 We are proud to have partnered with diverse<br />
-                businesses that rely on ThinkNorth Services LLP<br />
+                businesses that rely on ThinkNorth<br />
                 as their trusted financial partner.
               </p>
             </div>

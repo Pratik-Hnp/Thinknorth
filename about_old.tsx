@@ -259,7 +259,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
               <p className="text-gray-600">
                 We are proud to have partnered with diverse<br />
-                businesses that rely on ThinkNorth Services LLP<br />
+                businesses that rely on ThinkNorth<br />
                 as their trusted financial partner.
               </p>
             </div>
@@ -317,7 +317,7 @@ export default function About() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      ThinkNorth Services LLP has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management.
+                      ThinkNorth has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management.
                     </p>
                     <div className="font-bold">Mr. James John</div>
                     <div className="text-sm text-gray-600">CEO, Short Amusement Ltd</div>
@@ -334,7 +334,7 @@ export default function About() {
                   />
                   <div className="flex-1">
                     <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      ThinkNorth Services LLP has been our go-to partner for CA services specializing in accounting, tax filing and compliance.
+                      ThinkNorth has been our go-to partner for CA services specializing in accounting, tax filing and compliance.
                     </p>
                     <div className="font-bold">CA Adesh Mehta</div>
                     <div className="text-sm text-gray-600">Group CFO, K. Ghelawala Group</div>

@@ -12,9 +12,8 @@ export default function Footer() {
             <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
               <div>
                 <p className="font-semibold text-gray-900">Surat HQ</p>
-                <p>806, Rajhans Montessa,</p>
-                <p>Opp. Le Meridien Hotel, Surat Dumas Road,</p>
-                <p>Surat 395007, GJ, IN</p>
+                <p>806, Rajhans Montessa,Opp. Le Meridien Hotel,</p>
+                <p> Surat Dumas Road, Surat - 395007</p>
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Mumbai Office</p>

@@ -181,7 +181,7 @@ export default function Collaborations() {
         {/* CTA Section */}
         <ClientLogos
           title="OUR ESTEEMED CLIENTS"
-          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth Services LLP as their trusted financial partner."
+          description="We are proud to have partnered with diverse businesses that rely on ThinkNorth as their trusted financial partner."
         />
       </main>
       <Footer />

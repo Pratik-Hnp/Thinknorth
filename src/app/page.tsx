@@ -8,9 +8,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import ServicesMarquee from "@/components/ServicesMarquee";
-import HeroImageSlider from "@/components/HeroImageSlider";
+import HeroSlider from "@/components/HeroSlider";
 import ClientLogos from "@/components/ClientLogos";
 import { BlinkingEye, TargetHit } from "@/components/AnimatedIcons";
+import { services } from "@/data/services";
 
 export default function Home() {
   const teamRef = useRef(null);
@@ -22,41 +23,8 @@ export default function Home() {
         {/* Hero Section */}
         {/* Hero Section */}
         {/* Hero Section */}
-        <section className="gradient-blue text-white py-20 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                <div className="text-sm mb-4">Your compass to financial needs</div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Navigating Finance with northern precision
-                </h1>
-                <p className="text-brand-lighter mb-8 leading-relaxed">
-                  Think North is your partner for next-generation finance, accounting, and strategic advisory solutions. With expertise in global markets, compliance, and digital transformation, trusted by top business leaders, our commitment lies in delivering clarity, compliance, and sustainable growth, helping you navigate financial complexities with confidence and precision.
-                </p>
-                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
-                  CONNECT NOW ➔
-                </button>
-                <div className="mt-6 flex items-center gap-4">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-yellow-400">★</span>
-                    ))}
-                  </div>
-                  <span className="text-sm">5/5 rated by businesses</span>
-                </div>
-              </motion.div>
-
-              {/* Right Side Slider */}
-              <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-2xl">
-                <HeroImageSlider />
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Hero Section */}
+        <HeroSlider />
 
         {/* Services Strip */}
         <ServicesMarquee />
@@ -72,73 +40,24 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
-                  alt="Finance & Accounting"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Finance & Accounting Solutions</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Streamlined systems and expert reporting that deliver clarity, control, and compliance, every quarter.
-                  </p>
-                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
-                    KNOW MORE ➔
-                  </Link>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
-                  alt="Global Services"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Global Services – Corporates & HNIs</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Sophisticated tax, structuring, and cross-border compliance solutions for growth-focused corporates and discerning HNIs.
-                  </p>
-                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
-                    KNOW MORE ➔
-                  </Link>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
-                  alt="Fundraising & Advisory"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Fundraising, Capital Advisory & Financial Writing</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Capital strategy, fundraising support, and investor-grade documentation for businesses at every stage.
-                  </p>
-                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
-                    KNOW MORE ➔
-                  </Link>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
-                  alt="Audit & Diligence"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Internal Audit, Due Diligence & Litigation</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Deep-dive audits, robust diligence, and regulatory guidance to protect value and ensure governance excellence.
-                  </p>
-                  <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
-                    KNOW MORE ➔
-                  </Link>
-                </div>
-              </Card>
+              {services.slice(0, 4).map((service) => (
+                <Card key={service.id} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="font-bold text-lg mb-3 line-clamp-2 min-h-[3.5rem]">{service.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">
+                      {service.description}
+                    </p>
+                    <Link href={`/services/${service.slug}`} className="text-brand font-semibold hover:text-brand-dark transition-colors mt-auto inline-block">
+                      KNOW MORE ➔
+                    </Link>
+                  </div>
+                </Card>
+              ))}
             </div>
 
             <div className="text-center">
