@@ -41,11 +41,32 @@ export default function Contact() {
   });
 
   const [activeLocation, setActiveLocation] = useState<'Surat' | 'Mumbai'>('Surat');
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission
+    setStatus('submitting');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: "", lastName: "", email: "", message: "" });
+        setTimeout(() => setStatus('idle'), 5000); // Reset status after 5 seconds
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -213,8 +234,14 @@ export default function Contact() {
                     type="submit"
                     className="w-full bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
                   >
-                    SUBMIT ➔
+                    {status === 'submitting' ? 'SENDING...' : 'SUBMIT ➔'}
                   </button>
+                  {status === 'success' && (
+                    <p className="text-green-600 text-sm mt-2 font-medium">Message sent successfully! We'll get back to you soon.</p>
+                  )}
+                  {status === 'error' && (
+                    <p className="text-red-600 text-sm mt-2 font-medium">Failed to send message. Please try again later.</p>
+                  )}
                 </form>
               </Card>
             </div>

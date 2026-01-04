@@ -14,13 +14,13 @@ export default function AnimatedLogo() {
                 whileHover={{ scale: 1.05 }}
                 className="relative"
             >
-                <Image
+                <img
                     src="/logos/thinknorth final logo.png"
                     alt="ThinkNorth"
-                    width={185}
-                    height={45}
-                    priority
-                    className="h-10 w-auto"
+                // width={185}
+                // height={45}
+                // priority
+                // className="h-10 w-auto"
                 />
             </motion.div>
         </Link>

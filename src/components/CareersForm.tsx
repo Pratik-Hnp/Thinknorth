@@ -55,18 +55,31 @@ export default function CareersForm() {
         setIsSubmitting(true);
         setSubmitStatus(null);
 
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        try {
+            const response = await fetch('/api/careers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-        console.log("Form Data:", data);
-        setIsSubmitting(false);
-        setSubmitStatus("success");
-        reset();
-        captchaRef.current?.reset();
-        setIsCaptchaValid(false);
-
-        // Auto hide success message
-        setTimeout(() => setSubmitStatus(null), 5000);
+            if (response.ok) {
+                setSubmitStatus("success");
+                reset();
+                captchaRef.current?.reset();
+                setIsCaptchaValid(false);
+                // Auto hide success message
+                setTimeout(() => setSubmitStatus(null), 5000);
+            } else {
+                setSubmitStatus("error");
+            }
+        } catch (error) {
+            console.error("Error submitting application:", error);
+            setSubmitStatus("error");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -224,6 +237,20 @@ export default function CareersForm() {
                             <div>
                                 <strong className="block">Application Submitted Successfully!</strong>
                                 <span className="text-sm">We will review your profile and get back to you soon.</span>
+                            </div>
+                        </motion.div>
+                    )}
+                    {submitStatus === "error" && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            className="mt-6 p-4 bg-red-50 text-red-700 rounded-lg flex items-center gap-3 border border-red-200"
+                        >
+                            <AlertCircle size={24} />
+                            <div>
+                                <strong className="block">Submission Failed</strong>
+                                <span className="text-sm">Something went wrong. Please try again later.</span>
                             </div>
                         </motion.div>
                     )}

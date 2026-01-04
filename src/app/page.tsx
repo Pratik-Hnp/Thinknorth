@@ -61,9 +61,9 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center gap-2 bg-yellow-50 px-4 py-2 rounded-lg mb-4">
+              {/* <div className="inline-flex items-center gap-2 bg-yellow-50 px-4 py-2 rounded-lg mb-4">
                 <span className="text-sm">⭐ Trusted by 100+ businesses</span>
-              </div>
+              </div> */}
               <Link
                 href="/services"
                 className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
