@@ -27,7 +27,7 @@ export default function Home() {
         <HeroSlider />
 
         {/* Services Strip */}
-        <ServicesMarquee />
+        {/* <ServicesMarquee /> */}
 
         {/* Our Services */}
         <section className="py-20 bg-gray-100">
