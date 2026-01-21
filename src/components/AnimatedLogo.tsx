@@ -15,14 +15,12 @@ export default function AnimatedLogo() {
                 className="relative"
             >
                 <img
-                    src="/logos/thinknorth final logo.png"
+                    src="/logos/think north logo.png"
                     alt="ThinkNorth"
-                // width={185}
-                // height={45}
-                // priority
-                // className="h-10 w-auto"
+                    className="h-10 w-auto"
                 />
             </motion.div>
         </Link>
     );
 }
+

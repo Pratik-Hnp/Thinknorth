@@ -17,7 +17,7 @@ export const services: Service[] = [
         slug: "finance-accounting-solutions",
         title: "FINANCE & ACCOUNTING SOLUTIONS",
         description: "Achieve financial clarity, improved controls, and real-time insights with streamlined accounting systems and expert financial management.",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+        image: "/images/services/Ourservices 1. Fin.Acc..png",
         offeringsTitle: "Our offerings include",
         offerings: [
             {
@@ -35,7 +35,7 @@ export const services: Service[] = [
         slug: "global-financial-compliance",
         title: "GLOBAL FINANCIAL & COMPLIANCE SERVICES",
         description: "We deliver high-level tax planning, wealth structuring, and multinational compliance support for corporate groups, international businesses, and high-net-worth individuals.",
-        image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop",
+        image: "/images/services/Ourservices 2. Glob. Fin.and Comp. ser..png",
         offeringsTitle: "Our offerings include",
         offerings: [
             {
@@ -63,7 +63,7 @@ export const services: Service[] = [
         slug: "fundraising-capital-advisory",
         title: "FUNDRAISING, CAPITAL ADVISORY & INVESTOR DOCUMENTATION",
         description: "Strengthen your capital strategy with structured financial storytelling and investor-ready documentation. From early-stage ventures to established businesses, we support every stage of the funding journey.",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+        image: "/images/services/Ourservices 3. Fund. Rai. Cap..png",
         offeringsTitle: "Our expertise covers",
         offerings: [
             {
@@ -81,7 +81,7 @@ export const services: Service[] = [
         slug: "audit-due-diligence",
         title: "INTERNAL AUDIT, DUE DILIGENCE & LITIGATION SUPPORT",
         description: "Protect your business with robust risk controls, deep-dive assessments, and regulatory compliance frameworks.",
-        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+        image: "/images/services/Ourservices 4.  Int. Aud. Due Dili.png",
         offeringsTitle: "Our solutions include",
         offerings: [
             {

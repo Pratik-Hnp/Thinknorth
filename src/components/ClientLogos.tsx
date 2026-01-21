@@ -12,6 +12,21 @@ export default function ClientLogos({
     title = "OUR CLIENTS",
     description = "Trusted by industry leaders, visionary founders, and global decision-makers"
 }: ClientLogosProps) {
+    const clientLogos = [
+        { src: "/images/clients/1.png", alt: "Client 1" },
+        { src: "/images/clients/2.png", alt: "Client 2" },
+        { src: "/images/clients/3.png", alt: "Client 3" },
+        { src: "/images/clients/4.png", alt: "Client 4" },
+        { src: "/images/clients/5.png", alt: "Client 5" },
+        { src: "/images/clients/6.png", alt: "Client 6" },
+        { src: "/images/clients/7.png", alt: "Client 7" },
+        { src: "/images/clients/8.png", alt: "Client 8" },
+        { src: "/images/clients/9.png", alt: "Client 9" },
+        { src: "/images/clients/10.png", alt: "Client 10" },
+        { src: "/images/clients/11.png", alt: "Client 11" },
+        { src: "/images/clients/12.png", alt: "Client 12" },
+    ];
+
     return (
         <section className="py-20 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,13 +49,7 @@ export default function ClientLogos({
                         }}
                         className="flex flex-wrap justify-center gap-8 items-center"
                     >
-                        {[
-                            { src: "/logos/Blossom-logo.png", alt: "Blossom" },
-                            { src: "/logos/STRAGEMS_logo.webp", alt: "Stragems" },
-                            { src: "/logos/datago_technology_limited_logo.jpg", alt: "DataGo" },
-                            { src: "/logos/mtc_co_logo.jpg", alt: "MTC" },
-                            { src: "/logos/newmarkable_logo-Photoroom.png", alt: "Newmarkable" },
-                        ].map((logo, idx) => (
+                        {clientLogos.slice(0, 6).map((logo, idx) => (
                             <motion.div
                                 key={idx}
                                 variants={{
@@ -73,10 +82,7 @@ export default function ClientLogos({
                         }}
                         className="flex flex-wrap justify-center gap-8 items-center"
                     >
-                        {[
-                            { src: "/logos/E5AE8FE899B9Logo-E7AB96E78988-835-scaled-Photoroom.png", alt: "Client 7" },
-                            { src: "/logos/WhatsApp Image 2025-11-24 at 11.44.06 PM-Photoroom.png", alt: "Client 8" },
-                        ].map((logo, idx) => (
+                        {clientLogos.slice(6, 12).map((logo, idx) => (
                             <motion.div
                                 key={idx}
                                 variants={{
@@ -100,3 +106,4 @@ export default function ClientLogos({
         </section>
     );
 }
+
