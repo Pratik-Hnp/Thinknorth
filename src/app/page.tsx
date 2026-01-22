@@ -115,7 +115,7 @@ export default function Home() {
 
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+                  src="/images/services/Ourservices 5. Value Pro..png"
                   alt="Business presentation"
                   className="rounded-lg shadow-lg h-[500px] w-full object-cover"
                 />

@@ -36,7 +36,7 @@ export default function ServicesClient() {
                             </div>
                             <div className="relative">
                                 <img
-                                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
+                                    src="/images/services/service page 1. banner image.png"
                                     alt="Business meeting"
                                     className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
                                 />
@@ -136,7 +136,7 @@ export default function ServicesClient() {
 
                             <div className="relative">
                                 <img
-                                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+                                    src="/images/services/services 2. About us.png"
                                     alt="Business presentation"
                                     className="rounded-lg shadow-lg h-[500px] w-full object-cover"
                                 />
