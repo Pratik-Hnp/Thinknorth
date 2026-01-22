@@ -56,7 +56,7 @@ export default function HeroSlider() {
     const currentSlide = slides[currentIndex];
 
     return (
-        <section className="relative h-screen w-full overflow-hidden bg-gray-900 text-white">
+        <section className="relative min-h-screen w-full overflow-hidden bg-gray-900 text-white">
             {/* Background Images */}
             <div className="absolute inset-0">
                 <AnimatePresence mode="wait">
@@ -80,7 +80,7 @@ export default function HeroSlider() {
             </div>
 
             {/* Main Content */}
-            <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pb-32">
+            <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pb-48 sm:pb-32 pt-24 sm:pt-0">
                 <motion.div
                     key={`content-${currentIndex}`}
                     initial={{ opacity: 0, y: 30 }}
@@ -88,15 +88,15 @@ export default function HeroSlider() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="max-w-3xl"
                 >
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
                         {currentSlide.title}
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light">
+                    <p className="text-base sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 font-light">
                         {currentSlide.subtitle}
                     </p>
                     <Link
                         href={currentSlide.link}
-                        className="inline-flex items-center gap-2 bg-brand text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand transition-all duration-300"
+                        className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-white hover:text-brand transition-all duration-300"
                     >
                         DISCOVER MORE <ChevronRight size={20} />
                     </Link>
@@ -106,14 +106,14 @@ export default function HeroSlider() {
             {/* Bottom Navigation Boxes */}
             <div className="absolute bottom-0 left-0 w-full z-30 border-t border-white/10 bg-black/20 backdrop-blur-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-4">
                         {slides.map((slide, index) => {
                             const isActive = index === currentIndex;
                             return (
                                 <button
                                     key={slide.id}
                                     onClick={() => setCurrentIndex(index)}
-                                    className={`relative h-24 md:h-32 text-left px-6 py-4 transition-colors duration-300 group ${isActive ? "bg-white/10" : "hover:bg-white/5"
+                                    className={`relative h-16 sm:h-24 md:h-32 text-left px-3 sm:px-6 py-2 sm:py-4 transition-colors duration-300 group ${isActive ? "bg-white/10" : "hover:bg-white/5"
                                         }`}
                                 >
                                     {/* Progress Bar for Active Slide */}
@@ -132,10 +132,10 @@ export default function HeroSlider() {
                                     )}
 
                                     <div className="flex flex-col justify-between h-full">
-                                        <span className={`text-sm font-medium tracking-wider mb-2 ${isActive ? "text-brand-lighter" : "text-gray-400"}`}>
+                                        <span className={`text-xs sm:text-sm font-medium tracking-wider mb-1 sm:mb-2 ${isActive ? "text-brand-lighter" : "text-gray-400"}`}>
                                             0{index + 1}
                                         </span>
-                                        <span className={`text-lg md:text-xl font-bold leading-tight ${isActive ? "text-white" : "text-gray-300 group-hover:text-white"}`}>
+                                        <span className={`text-xs sm:text-lg md:text-xl font-bold leading-tight ${isActive ? "text-white" : "text-gray-300 group-hover:text-white"}`}>
                                             {slide.boxTitle}
                                         </span>
                                     </div>

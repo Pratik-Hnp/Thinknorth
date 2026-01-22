@@ -22,7 +22,7 @@ export const services: Service[] = [
         offerings: [
             {
                 items: [
-                    "Accounting system setup & monthly bookkeeping",
+                    "Account payable/Account receivable setup and monthly bookkeeping support",
                     "MIS reporting, dashboards & decision-ready insights",
                     "Working capital tracking, fund-flow analysis & ratio assessment",
                     "ERP transition support & modernization of legacy systems"

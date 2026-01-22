@@ -18,16 +18,16 @@ export default function About() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="gradient-blue text-white py-20 relative overflow-hidden">
+        <section className="gradient-blue text-white py-12 sm:py-20 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <div className="text-sm mb-4">Think North</div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                   YOUR GROWTH, OUR<br />EXPERTISE
                 </h1>
-                <p className="text-lg font-semibold mb-4">INTEGRITY · INSIGHT · IMPACT</p>
-                <p className="text-brand-lighter mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">INTEGRITY · INSIGHT · IMPACT</p>
+                <p className="text-brand-lighter mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                   At Think North, we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
@@ -42,11 +42,11 @@ export default function About() {
                   <span className="text-sm">5/5 rated by businesses</span>
                 </div> */}
               </div>
-              <div className="relative">
+              <div className="relative mt-8 md:mt-0">
                 <img
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
-                  alt="Team meeting"
-                  className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
+                  src="/images/services/services 2. About us.png"
+                  alt="About Us"
+                  className="rounded-lg shadow-2xl h-[250px] sm:h-[350px] md:h-[400px] w-full object-cover"
                 />
               </div>
             </div>
@@ -57,14 +57,14 @@ export default function About() {
         <ServicesMarquee />
 
         {/* About Us Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <img
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
                   alt="Team collaboration"
-                  className="rounded-lg shadow-lg h-[500px] w-full object-cover"
+                  className="rounded-lg shadow-lg h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover"
                 />
               </div>
               <div>
@@ -171,10 +171,10 @@ export default function About() {
         </section> */}
 
         {/* Office Gallery */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 sm:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">INSIDE THINK NORTH SERVICES LLP</h2>
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">INSIDE THINK NORTH SERVICES LLP</h2>
               <div className="text-gray-600 space-y-4">
                 <p>
                   Step into a workspace where structure meets strategy and every corner reflects our commitment to excellence. Our office environment is designed to inspire focus, collaboration, and meaningful conversations. The curated wall art, warm aesthetics, and organized layouts showcase the thinking culture that drives our financial advisory expertise.
@@ -195,20 +195,20 @@ export default function About() {
         </section>
 
         {/* Our Services Preview */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
-              <p className="text-gray-600">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
+              <p className="text-gray-600 text-sm sm:text-base">
                 At Think North , we deliver comprehensive financial and strategic solutions designed to help you grow, comply, and lead with confidence. Our services are crafted for modern businesses that demand accuracy, agility, and accountability in every financial move.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center mb-8 sm:mb-12">
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
                 alt="Services"
-                className="rounded-lg shadow-lg h-[400px] w-full object-cover"
+                className="rounded-lg shadow-lg h-[250px] sm:h-[350px] md:h-[400px] w-full object-cover"
               />
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -302,7 +302,7 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-20">
+        <section className="relative py-12 sm:py-20">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -312,7 +312,7 @@ export default function About() {
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
             <Link
               href="/contact"
               className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors"

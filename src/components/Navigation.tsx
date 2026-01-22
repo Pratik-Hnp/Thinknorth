@@ -85,7 +85,17 @@ export default function Navigation() {
                         </div>
 
                         {/* Right Column: Links */}
+
                         <div className="col-span-8 space-y-2">
+                          <Link
+                            href="/services/global-financial-compliance"
+                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                          >
+                            <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Global Financial & Compliance</span>
+                            <span className="text-gray-400 group-hover:text-brand transition-colors">➔</span>
+                          </Link>
+                          <div className="h-px bg-gray-100 mx-3"></div>
+
                           <Link
                             href="/services/finance-accounting-solutions"
                             className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
@@ -95,14 +105,6 @@ export default function Navigation() {
                           </Link>
                           <div className="h-px bg-gray-100 mx-3"></div>
 
-                          <Link
-                            href="/services/global-financial-compliance"
-                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                          >
-                            <span className="text-sm font-medium text-gray-700 group-hover:text-brand">Global Financial & Compliance</span>
-                            <span className="text-gray-400 group-hover:text-brand transition-colors">➔</span>
-                          </Link>
-                          <div className="h-px bg-gray-100 mx-3"></div>
 
                           <Link
                             href="/services/fundraising-capital-advisory"

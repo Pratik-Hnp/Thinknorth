@@ -6,60 +6,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
 
 // Helper to generate image paths
-const getPath = (name: string) => `/logos/final%201/${name}`;
+const getPath = (name: string) => `/office-photos/${encodeURIComponent(name)}`;
 
-// All 37 Images Sorted Logically
-// Order: Reception -> Waiting -> Staff Area -> Cabin 1 -> Cabin 2 -> Conference
-// Note: We manually list them to ensure exact order and alt tags.
+// New Office Photos - Sorted by number prefix (1-11)
 const ALL_IMAGES = [
-    // --- Reception (4) ---
-    { src: "Reception - 1.jpg", alt: "Main Reception Desk" },
-    { src: "Reception - 2.jpg", alt: "Entrance Lobby" },
-    { src: "Reception - 3.jpg", alt: "Welcome Area" },
-    { src: "Reception - 4.jpg", alt: "Reception Detail" },
-
-    // --- Waiting (3) ---
-    { src: "Waiting - 1.jpg", alt: "Guest Waiting Lounge" },
-    { src: "Waiting - 2.jpg", alt: "Waiting Area Seating" },
-    { src: "Waiting - 3.jpg", alt: "Comfortable Visitor Zone" },
-
-    // --- Staff Area (11) ---
-    { src: "Staff Area - 1.jpg", alt: "Open Workspace" },
-    { src: "Staff Area - 2.jpg", alt: "Staff Workstations" },
-    { src: "Staff Area - 3.jpg", alt: "Collaborative Floor" },
-    { src: "Staff Area - 4.jpg", alt: "Team Desk" },
-    { src: "Staff Area - 5.jpg", alt: "Workspace View" },
-    { src: "Staff Area - 6.jpg", alt: "Office Interior" },
-    { src: "Staff Area - 7.jpg", alt: "Work Environment" },
-    { src: "Staff Area - 8.jpg", alt: "Staff Zone Wide" },
-    { src: "Staff Area - 9.jpg", alt: "Desk Arrangement" },
-    { src: "Staff Area - 10.jpg", alt: "Office Aisle" },
-    { src: "Staff Area - 11.jpg", alt: "Working Space" },
-
-    // --- Cabin 1 (8) ---
-    { src: "Cabin 1 - 1.jpg", alt: "Executive Cabin 1" },
-    { src: "Cabin 1 - 2.jpg", alt: "Director's Desk" },
-    { src: "Cabin 1 - 3.jpg", alt: "Cabin Interior" },
-    { src: "Cabin 1 - 4.jpg", alt: "Executive Seating" },
-    { src: "Cabin 1 - 5.jpg", alt: "Cabin View" },
-    { src: "Cabin 1 - 6.jpg", alt: "Private Office" },
-    { src: "Cabin 1 - 7.jpg", alt: "Cabin Detail" },
-    { src: "Cabin 1 - 8.jpg", alt: "Executive Workspace" },
-
-    // --- Cabin 2 (5) ---
-    { src: "Cabin 2 - 1.jpg", alt: "Partner Cabin" },
-    { src: "Cabin 2 - 2.jpg", alt: "Manager's Office" },
-    { src: "Cabin 2 - 3.jpg", alt: "Cabin Meeting Area" },
-    { src: "Cabin 2 - 4.jpg", alt: "Office Cabin View" },
-    { src: "Cabin 2 - 5.jpg", alt: "Private Cabin" },
-
-    // --- Conference (6) ---
-    { src: "Conference - 1.jpg", alt: "Conference Room Main" },
-    { src: "Conference - 2.jpg", alt: "Meeting Table" },
-    { src: "Conference - 3.jpg", alt: "Conference Facilities" },
-    { src: "Conference - 4.jpg", alt: "Boardroom View" },
-    { src: "Conference - 5.jpg", alt: "Presentation Area" },
-    { src: "Conference - 6.jpg", alt: "Meeting Room" },
+    { src: "1. Waiting - 1.jpg", alt: "Waiting Area" },
+    { src: "2. Staff Area - 8.jpg", alt: "Staff Work Area" },
+    { src: "3. Staff Area - 10.jpg", alt: "Open Workspace" },
+    { src: "4. Staff Area - 9.jpg", alt: "Team Workspace" },
+    { src: "5. Staff Area - 6.jpg", alt: "Staff Collaboration" },
+    { src: "6. Staff Area - 1.jpg", alt: "Office Environment" },
+    { src: "7. Cabin 2 - 1.jpg", alt: "Partner Cabin" },
+    { src: "8. Cabin 1 - 4.jpg", alt: "Executive Seating" },
+    { src: "9. Cabin 1 - 2.jpg", alt: "Director's Desk" },
+    { src: "10 .Conference - 1.jpg", alt: "Conference Room Main" },
+    { src: "11. Conference - 4.jpg", alt: "Boardroom View" },
 ].map((item, index) => ({
     id: index + 1,
     src: getPath(item.src),
@@ -68,7 +29,7 @@ const ALL_IMAGES = [
 
 export default function OfficeGallery() {
     const [selectedId, setSelectedId] = useState<number | null>(null);
-    const [visibleCount, setVisibleCount] = useState(12); // Show 12 initially
+    const [visibleCount, setVisibleCount] = useState(12); // Show all 11 images
     const [zoom, setZoom] = useState(1);
 
     const selectedImage = ALL_IMAGES.find((item) => item.id === selectedId);

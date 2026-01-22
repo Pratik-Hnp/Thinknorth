@@ -30,10 +30,10 @@ export default function Home() {
         {/* <ServicesMarquee /> */}
 
         {/* Our Services */}
-        <section className="py-20 bg-gray-100">
+        <section className="py-12 sm:py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
               <p className="text-gray-600">
                 Experience a comprehensive range of solutions tailored for modern businesses and discerning individuals:
               </p>
@@ -75,11 +75,11 @@ export default function Home() {
         </section>
 
         {/* Value Proposition */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">VALUE PROPOSITION</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">VALUE PROPOSITION</h2>
                 <p className="text-lg font-semibold text-gray-900 mb-6">Your Strategic Partner</p>
 
                 <div className="space-y-6">
@@ -113,17 +113,17 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="relative">
+              <div className="relative mt-8 md:mt-0">
                 <img
                   src="/images/services/Ourservices 5. Value Pro..png"
                   alt="Business presentation"
-                  className="rounded-lg shadow-lg h-[500px] w-full object-cover"
+                  className="rounded-lg shadow-lg h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover"
                 />
-                <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
-                  <div className="text-4xl font-bold mb-2">20+</div>
-                  <div className="text-sm">Happy Accountants</div>
-                  <div className="mt-4 text-4xl font-bold mb-2">15</div>
-                  <div className="text-sm">Years of experience</div>
+                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-brand-dark text-white p-4 sm:p-6 rounded-lg shadow-xl">
+                  <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">20+</div>
+                  <div className="text-xs sm:text-sm">Happy Accountants</div>
+                  <div className="mt-2 sm:mt-4 text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">15</div>
+                  <div className="text-xs sm:text-sm">Years of experience</div>
                 </div>
               </div>
             </div>
@@ -190,10 +190,10 @@ export default function Home() {
         <ClientLogos />
 
         {/* Testimonials */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">NATIONAL AND INTERNATIONAL RESULTS</h2>
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">NATIONAL AND INTERNATIONAL RESULTS</h2>
               <p className="text-gray-600">
                 Our commitment to excellence reflects in the feedback we receive.<br />
                 Here's what some of our clients have to say.
@@ -247,7 +247,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-20">
+        <section className="relative py-12 sm:py-20">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">Thinking of Numbers?<br />Think North</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Thinking of Numbers?<br />Think North</h2>
             <Link
               href="/contact"
               className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"

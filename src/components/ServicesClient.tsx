@@ -19,26 +19,26 @@ export default function ServicesClient() {
             <Navigation />
             <main>
                 {/* Hero Section */}
-                <section className="gradient-blue text-white py-20 relative overflow-hidden">
+                <section className="gradient-blue text-white py-12 sm:py-20 relative overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                             <div>
                                 <div className="text-sm mb-4">Think North</div>
-                                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                                <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                                     Strategic CA Solutions Designed for Long-Term Financial Confidence
                                 </h1>
-                                <p className="text-brand-lighter mb-8 leading-relaxed">
+                                <p className="text-brand-lighter mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                                     We blend precision, insight, and proactive financial intelligence to deliver bookkeeping, advisory, audit, and compliance solutions tailored for the fast-evolving needs of startups, SMEs, corporates, and high-growth enterprises.
                                 </p>
                                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                                     CONNECT NOW ➔
                                 </button>
                             </div>
-                            <div className="relative">
+                            <div className="relative mt-6 md:mt-0">
                                 <img
                                     src="/images/services/service page 1. banner image.png"
                                     alt="Business meeting"
-                                    className="rounded-lg shadow-2xl h-[400px] w-full object-cover"
+                                    className="rounded-lg shadow-2xl h-[250px] sm:h-[350px] md:h-[400px] w-full object-cover"
                                 />
                             </div>
                         </div>
@@ -96,12 +96,12 @@ export default function ServicesClient() {
                 </section>
 
                 {/* Value Proposition */}
-                <section className="py-20 bg-gray-50">
+                <section className="py-12 sm:py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-6">VALUE PROPOSITION</h2>
-                                <p className="text-lg font-semibold text-gray-900 mb-6">Your Strategic Partner</p>
+                                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">VALUE PROPOSITION</h2>
+                                <p className="text-base sm:text-lg font-semibold text-gray-900 mb-4 sm:mb-6">Your Strategic Partner</p>
 
                                 <div className="space-y-6">
                                     <div>
@@ -134,17 +134,17 @@ export default function ServicesClient() {
                                 </button>
                             </div>
 
-                            <div className="relative">
+                            <div className="relative mt-8 md:mt-0">
                                 <img
-                                    src="/images/services/services 2. About us.png"
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
                                     alt="Business presentation"
-                                    className="rounded-lg shadow-lg h-[500px] w-full object-cover"
+                                    className="rounded-lg shadow-lg h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover"
                                 />
-                                <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
-                                    <div className="text-4xl font-bold mb-2">20+</div>
-                                    <div className="text-sm">Happy Accountants</div>
-                                    <div className="mt-4 text-4xl font-bold mb-2">15</div>
-                                    <div className="text-sm">Years of experience</div>
+                                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-brand-dark text-white p-4 sm:p-6 rounded-lg shadow-xl">
+                                    <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">20+</div>
+                                    <div className="text-xs sm:text-sm">Happy Accountants</div>
+                                    <div className="mt-2 sm:mt-4 text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">15</div>
+                                    <div className="text-xs sm:text-sm">Years of experience</div>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@ export default function ServicesClient() {
                 <ClientLogos title="OUR ESTEEMED CLIENTS" description="Trusted by Businesses That Trust Numbers" />
 
                 {/* CTA Section */}
-                <section className="relative py-20">
+                <section className="relative py-12 sm:py-20">
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
