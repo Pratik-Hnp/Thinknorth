@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import ServicesMarquee from "@/components/ServicesMarquee";
 import HeroSlider from "@/components/HeroSlider";
 import ClientLogos from "@/components/ClientLogos";
+import Testimonials from "@/components/Testimonials";
 import { BlinkingEye, TargetHit } from "@/components/AnimatedIcons";
 import { services } from "@/data/services";
 
@@ -190,61 +191,10 @@ export default function Home() {
         <ClientLogos />
 
         {/* Testimonials */}
-        <section className="py-12 sm:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">NATIONAL AND INTERNATIONAL RESULTS</h2>
-              <p className="text-gray-600">
-                Our commitment to excellence reflects in the feedback we receive.<br />
-                Here's what some of our clients have to say.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="p-6">
-                <div className="flex gap-4 mb-4">
-                  <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed italic">
-                      "Think North streamlined our international expansion, ensuring seamless compliance and measurable savings."
-                    </p>
-                    <div className="mt-4">
-                      <div className="font-bold">CFO</div>
-                      <div className="text-sm text-gray-600">Indian Tech Exporter</div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex gap-4 mb-4">
-                  <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed italic">
-                      "Their team’s expertise in audit and capital raising enabled our SME-IPO journey with confidence."
-                    </p>
-                    <div className="mt-4">
-                      <div className="font-bold">Promoter</div>
-                      <div className="text-sm text-gray-600">Manufacturing Group</div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex gap-4 mb-4">
-                  <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed italic">
-                      "Professional, insightful, and always accessible, the Think North difference is unmatched."
-                    </p>
-                    <div className="mt-4">
-                      <div className="font-bold">NRI Client</div>
-                      <div className="text-sm text-gray-600">UK</div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
+        <Testimonials
+          title="VOICES OF TRUST"
+          subtitle="Our commitment to excellence reflects in the feedback we receive. Here's what our clients have to say."
+        />
 
         {/* CTA Section */}
         <section className="relative py-12 sm:py-20">
