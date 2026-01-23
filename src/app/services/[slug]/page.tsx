@@ -30,7 +30,7 @@ export default function ServicePage({ params }: ServicePageProps) {
             <Navigation />
             <main className="bg-white min-h-screen">
                 {/* Hero Banner */}
-                <section className="bg-brand text-white py-20 relative overflow-hidden">
+                <section className="bg-brand text-white pt-32 pb-20 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/20 z-0"></div>
                     <div
                         className="absolute inset-0 bg-cover bg-center opacity-20"

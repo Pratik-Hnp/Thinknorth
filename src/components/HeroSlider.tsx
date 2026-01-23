@@ -56,7 +56,7 @@ export default function HeroSlider() {
     const currentSlide = slides[currentIndex];
 
     return (
-        <section className="relative min-h-screen w-full overflow-hidden bg-gray-900 text-white">
+        <section className="relative h-screen w-full overflow-hidden bg-gray-900 text-white">
             {/* Background Images */}
             <div className="absolute inset-0">
                 <AnimatePresence mode="wait">
@@ -80,7 +80,7 @@ export default function HeroSlider() {
             </div>
 
             {/* Main Content */}
-            <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pb-48 sm:pb-32 pt-24 sm:pt-0">
+            <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pb-48 sm:pb-32 pt-32 sm:pt-32">
                 <motion.div
                     key={`content-${currentIndex}`}
                     initial={{ opacity: 0, y: 30 }}
