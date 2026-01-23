@@ -11,7 +11,7 @@ export default function Careers() {
             <Navigation />
             <main className="bg-gray-50 min-h-screen">
                 {/* Hero Section */}
-                <section className="bg-brand text-white py-16 relative overflow-hidden">
+                <section className="bg-brand text-white pt-32 pb-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop')] bg-cover bg-center opacity-10"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">Build Your Future With Us</h1>

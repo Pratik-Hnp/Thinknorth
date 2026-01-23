@@ -57,7 +57,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
                 </div>
                 <div className="flex-1 min-w-0">
                     <div className="font-bold text-gray-900 text-sm sm:text-base">{testimonial.role}</div>
-                    <div className="text-xs sm:text-sm text-brand">{testimonial.industry}</div>
+
                 </div>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed italic line-clamp-4">
