@@ -80,7 +80,7 @@ export default function ServicesClient() {
                                             href={`/services/${service.slug}`}
                                             className="bg-brand text-center text-white px-6 py-2 rounded font-semibold hover:bg-brand-dark transition-colors w-full mt-auto block"
                                         >
-                                            KNOW MORE ➔
+                                            EXPLORE YOUR OPTIONS ➔
                                         </Link>
                                     </div>
                                 </Card>
@@ -129,14 +129,17 @@ export default function ServicesClient() {
                                     </div>
                                 </div>
 
-                                <button className="mt-8 bg-brand text-white px-6 py-3 rounded font-semibold hover:bg-brand-dark transition-colors">
+                                <Link
+                                    href="/services"
+                                    className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
+                                >
                                     KNOW MORE ➔
-                                </button>
+                                </Link>
                             </div>
 
                             <div className="relative mt-8 md:mt-0">
                                 <img
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                                    src="/images/services/Our services last link image.png"
                                     alt="Business presentation"
                                     className="rounded-lg shadow-lg h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover"
                                 />

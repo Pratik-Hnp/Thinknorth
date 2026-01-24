@@ -207,7 +207,7 @@ export default function About() {
 
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center mb-8 sm:mb-12">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                src="/images/services/Our services last link image.png"
                 alt="Services"
                 className="rounded-lg shadow-lg h-[250px] sm:h-[350px] md:h-[400px] w-full object-cover"
               />
