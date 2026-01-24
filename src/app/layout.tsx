@@ -8,6 +8,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import CompassPreloader from "@/components/CompassPreloader";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CallButton from "@/components/CallButton";
+import ContentProtection from "@/components/ContentProtection";
 
 export const metadata: Metadata = {
   title: "ThinkNorth Service LLP",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
+        <ContentProtection />
         <ErrorReporter />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"

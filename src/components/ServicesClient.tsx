@@ -30,9 +30,9 @@ export default function ServicesClient() {
                                 <p className="text-brand-lighter mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                                     We blend precision, insight, and proactive financial intelligence to deliver bookkeeping, advisory, audit, and compliance solutions tailored for the fast-evolving needs of startups, SMEs, corporates, and high-growth enterprises.
                                 </p>
-                                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
+                                <Link href="/contact" className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                                     CONNECT NOW ➔
-                                </button>
+                                </Link>
                             </div>
                             <div className="relative mt-6 md:mt-0">
                                 <img

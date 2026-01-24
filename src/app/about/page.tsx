@@ -31,9 +31,9 @@ export default function About() {
                 <p className="text-brand-lighter mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                   At Think North, we go beyond numbers to provide clients with data-driven insights and forward-thinking solutions that help them grow.
                 </p>
-                <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
+                <Link href="/contact" className="inline-block bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
-                </button>
+                </Link>
                 {/* <div className="mt-6 flex items-center gap-4">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
