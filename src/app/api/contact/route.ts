@@ -7,16 +7,18 @@ export async function POST(request: Request) {
     const { name, lastName, email, message } = await request.json();
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: Boolean(process.env.SMTP_SECURE), // true for 465, false for other ports
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to yourself
+      from: process.env.SMTP_USER,
+      to: process.env.SMTP_USER, // Send to yourself
       subject: `New Contact Form Submission from ${name} ${lastName}`,
       html: `
         <h2>New Contact Request</h2>
