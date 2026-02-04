@@ -10,17 +10,10 @@ const getPath = (name: string) => `/office-photos/${encodeURIComponent(name)}`;
 
 // New Office Photos - Sorted by number prefix (1-11)
 const ALL_IMAGES = [
-    { src: "1. Waiting - 1.jpg", alt: "Waiting Area" },
     { src: "2. Staff Area - 8.jpg", alt: "Staff Work Area" },
-    { src: "3. Staff Area - 10.jpg", alt: "Open Workspace" },
-    { src: "4. Staff Area - 9.jpg", alt: "Team Workspace" },
     { src: "5. Staff Area - 6.jpg", alt: "Staff Collaboration" },
-    { src: "6. Staff Area - 1.jpg", alt: "Office Environment" },
     { src: "7. Cabin 2 - 1.jpg", alt: "Partner Cabin" },
-    { src: "8. Cabin 1 - 4.jpg", alt: "Executive Seating" },
-    { src: "9. Cabin 1 - 2.jpg", alt: "Director's Desk" },
     { src: "10 .Conference - 1.jpg", alt: "Conference Room Main" },
-    { src: "11. Conference - 4.jpg", alt: "Boardroom View" },
 ].map((item, index) => ({
     id: index + 1,
     src: getPath(item.src),
