@@ -25,9 +25,9 @@ export default function Footer() {
 
           {/* Contacts */}
           <div>
-            <h3 className="font-bold text-gray-900 mb-4">Contacts</h3>
+            <h3 className="font-bold text-gray-900 mb-4">Contact Us</h3>
             <p className="text-gray-700 text-sm mb-2">📞 +91 80000 98089</p>
-            <p className="text-gray-700 text-sm mb-2">✉️ vardhan@thinknorth.co.in</p>
+            <p className="text-gray-700 text-sm mb-2" >✉️ vardhan@thinknorth.co.in</p>
             <p className="text-gray-700 text-sm">🌐 www.thinknorth.co.in</p>
             <div className="mt-4">
               <p className="font-semibold text-gray-900 mb-2">Follow us on</p>
