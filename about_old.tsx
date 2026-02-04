@@ -39,7 +39,7 @@ export default function About() {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
+                  src="/images/about/aboutus-banner.jpeg"
                   alt="Team meeting"
                   className="rounded-lg shadow-2xl"
                 />
@@ -66,7 +66,7 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
+                  src="/images/about/About-Us.png"
                   alt="Team collaboration"
                   className="rounded-lg shadow-lg"
                 />

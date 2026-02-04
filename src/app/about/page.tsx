@@ -45,7 +45,7 @@ export default function About() {
               </div>
               <div className="relative mt-8 md:mt-0">
                 <img
-                  src="/images/services/services 2. About us.png"
+                  src="/images/about/aboutus-banner.jpeg"
                   alt="About Us"
                   className="rounded-lg shadow-2xl h-[250px] sm:h-[350px] md:h-[400px] w-full object-cover"
                 />
@@ -63,7 +63,7 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop"
+                  src="/images/about/About-Us.png"
                   alt="Team collaboration"
                   className="rounded-lg shadow-lg h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover"
                 />

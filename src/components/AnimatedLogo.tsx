@@ -17,7 +17,7 @@ export default function AnimatedLogo() {
                 <img
                     src="/logos/think north logo.png"
                     alt="ThinkNorth"
-                    className="h-10 w-auto"
+                    className="h-13 w-auto"
                 />
             </motion.div>
         </Link>

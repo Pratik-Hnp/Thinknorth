@@ -22,7 +22,7 @@ export const services: Service[] = [
         offerings: [
             {
                 items: [
-                    "Account payable/Account receivable setup and monthly bookkeeping support",
+                    "Account payable/Account receivable support and monthly bookkeeping support",
                     "MIS reporting, dashboards & decision-ready insights",
                     "Working capital tracking, fund-flow analysis & ratio assessment",
                     "ERP transition support & modernization of legacy systems"
@@ -81,7 +81,7 @@ export const services: Service[] = [
         slug: "audit-due-diligence",
         title: "INTERNAL AUDIT, DUE DILIGENCE & LITIGATION SUPPORT",
         description: "Protect your business with robust risk controls, deep-dive assessments, and regulatory compliance frameworks.",
-        image: "/images/services/Ourservices 4.  Int. Aud. Due Dili.png",
+        image: "/images/services/Ourservices 4.  Int. Aud. Due Dili.jpeg",
         offeringsTitle: "Our solutions include",
         offerings: [
             {
