@@ -20,8 +20,8 @@ const contactChannels = [
   {
     icon: "✉️",
     label: "Email",
-    value: "vardhan@thinknorth.co.in",
-    href: "mailto:vardhan@thinknorth.co.in"
+    value: "consult@thinknorth.co.in",
+    href: "mailto:consult@thinknorth.co.in"
   },
   {
     icon: "🌐",
